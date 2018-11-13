@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Александра Боброва](https://up.htmlacademy.ru/htmlcss/23/user/790279).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Власов](https://htmlacademy.ru/profile/amaringo).
 
 ---
 
