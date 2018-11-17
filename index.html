@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="#" width="154" height="62" alt="Логотип магазина «Глейси»">
+          <img src="logo.png" width="154" height="62" alt="Логотип магазина «Глейси»">
         </a>
         <ul class="site-navigation">
           <li><a href="catalog.html">Каталог</a></li>
@@ -16,18 +16,171 @@
           <li><a href="#">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="search-link">Поиск</li>  <!--  Лупа, потом скрыть стилизуя  -->
           <li class="login-link">Вход</li>
-           <li class="basket-link">Пусто</li> <!--  Корзина, тоже стилизовать, пока так -->
         </ul>
+        <div class="search-link">
+          <a href="#">Поиск</a>
+        </div>
+        <div class="basket-link">
+          <a href="#">Пусто</a>
+        </div>
       </nav>
       <section class="phone">
-        <p class="work-time">С 10 до 20, ежедневно<br>
-        <span class="phone-number">8 812 450-25-25</span></p>
+        <p class="work-time">С 10 до 20, ежедневно</p>
+        <p class="phone-number">8 812 450-25-25</p>
       </section>
     </header>
+    <main class="container">
+        <h1 class="visually-hidden">Магазин мороженного «Глейси»</h1>
+        <section class="slider">
+            <div class="slide-offer">
+              <p>Крем-брюле и пломбир с малиновым джемом</p>
+              <p><img src="http://placehold.it/367x582" width="367" height="582" alt="Мороженное крем-брюле">
+            <img src="http://placehold.it/326x523" width="326" height="523" alt="Мороженное пломбир с малиновым джемом"></p>
 
+            <!-- предпологаемое место для форм слайдера -->
 
-
+            <a href="catalog.html" class="btn-slider">Возьми оба!</a>
+          </div>
+        </section>
+        <section class="promo">
+          <h2 class="visually-hidden">Акции</h2>
+          <div class="promo-offer raspberry-offer">
+            <p class="title-offer">Малинка даром!</p>
+            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <a href="catalog.html" class="btn-offer-raspberry">Хочу варенье!</a>
+          </div>
+          <div class="promo-offer chocolate-offer">
+          <p class="title-offer">Шоколадки даром!</p>
+          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a href="catalog.html" class="btn-offer-chocolate">Хочу шоколадки!</a>
+        </div>
+        </section>
+        <section class="best-sellers">
+          <h2 class="visually-hidden">Хиты продаж</h2>
+          <ul class="best-sellers-list">
+                  <li class="best-item">
+                    <h3>
+                      <a href="catalog.html">
+                        <p class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                        <p class="price"><b>310₽<span class="weight">/кг</span></b></p>
+                      </a>
+                    </h3>
+                    <p class="catalog-item-image">
+                      <a href="catalog.html">
+                        <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                      </a>
+                    </p>
+                  </li>
+                    <li class="best-item">
+                        <h3>
+                          <a href="catalog.html">
+                            <p class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</p>
+                            <p class="price"><b>380₽<span class="weight">/кг</span></b></p>
+                          </a>
+                        </h3>
+                        <p class="catalog-item-image">
+                          <a href="catalog.html">
+                            <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                          </a>
+                        </p>
+                        </li>
+                        <li class="best-item">
+                            <h3>
+                              <a href="catalog.html">
+                                <p class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</p>
+                                <p class="price">355₽<b><span class="weight">/кг</span></b></p>
+                              </a>
+                            </h3>
+                            <p class="catalog-item-image">
+                              <a href="catalog.html">
+                                <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                              </a>
+                            </p>
+                            </li>
+                            <li class="best-item">
+                                <h3>
+                                  <a href="catalog.html">
+                                    <p class="catalog-item-title">Сливочное крем-брюле с карамельной подливкой</p>
+                                    <p class="price"><b>415₽<span class="weight">/кг</span></b></p>
+                                  </a>
+                                </h3>
+                                <p class="catalog-item-image">
+                                  <a href="catalog.html">
+                                    <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                                  </a>
+                                </p>
+                                </li>
+          </ul>
+        </section>
+        <section class="features">
+                <h3 class="visually-hidden">Преимущества</h3>
+                <ul class="features-list">
+                  <li class="feature-item">
+                    <p>Все наше мороженое изготавливается на собственном производстве,
+                      с использованием современного оборудования и проверенных временем технологий.</p>
+                  </li>
+                  <li class="feature-item">
+                    <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
+                      Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+                  </li>
+                  <li class="feature-item">
+                    <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний,
+                      с которыми нас связывает долговременное сотрудничество.</p>
+                  </li>
+                  <li class="feature-item">
+                    <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
+                        который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+                    </li>
+                </ul>
+              </section>
+              <article class="news-blog">
+                <h4>Новое в нашем блоге</h4>
+                <a href="#" class="artirle-title">10 способов сервировки фруктовых щербетов к столу</a>
+              </article>
+              <section class="subscribe">
+                <h4 class="visually-hidden">Подписка</h4>
+                <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
+                  что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+                  <!-- Место для формы  -->
+                  <button class="btn-subscribe">Отправить</button>
+              </section>
+              <section class="contacts">
+                <p class="map">
+                  <img src="http://placehold.it/1200x430" width="1200" height="430" alt="Карта">
+                </p>
+                <section class="contacts-info">
+                  <h4 class="visually-hidden">Контакты</h4>
+                  <p class="description">Адрес главного офиса и офлайн-магазина:</p>
+                    <p class="contacts">ул. Большая Конюшенная 19/8, Санкт-Петербург</p></p>
+                  <p class="description">Для заказов по телефону:</p>
+                  <p class="contacts">8 812 450-25-25</p>
+                  <p class="description">(с 10 до 20 ежедневно)</p>
+                  <button class="feed-back">Форма обратной связи</button>
+                </section>
+              </section>
+            </main>
+            <footer class="main-footer">
+              <div class="footer-social">
+                <ul>
+                  <li><a class="social-button" href="#">Вконтакте</a></li>
+                  <li><a class="social-button" href="#">Фейсбук</a></li>
+                  <li><a class="social-button" href="#">Инстаграм</a></li>
+                </ul>
+              </div>
+               <div class="about-us">
+                <ul>
+                  <li><a href="#"><b>Для поставщиков</b></a></li>
+                  <li><a href="#">О производстве</a></li>
+                  <li><a href="#">Наши документы</a></li>
+                  <li><a href="#">Экологические стандарты</a></li>
+                </ul>
+              </div>
+              <div class="footer-copyright">
+                <p><a class="logo-creators" href="https://htmlacademy.ru/intensive/htmlcss">
+                <img src="logo-htmlacademy.png" width="107" height="38" alt="Логотип HTML Academy»"></a></p>
+              <p><a class="link-creators" href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy</a></p>
+              </div>
+            </footer>
   </body>
 </html>
