@@ -12,11 +12,31 @@
                 </a>
                 <ul class="site-navigation">
                     <li><a href="catalog.html">Каталог</a></li>
+                    <!-- Попап навигации -->
+                    <ul class="site-navigation-popup">
+                        <li class="new-item">Новинки</li>
+                        <li>Сливочное</li>
+                        <li>Щербеты</li>
+                        <li>Фруктовый лед</li>
+                        <li>Мелонин</li>
+                    </ul>
                     <li><a href="#">Доставка и оплата</a></li>
                     <li><a href="#">О Компании</a></li>
                 </ul>
-                <div class="login-link">Вход</div>
                 <div class="search-link">Поиск</div>
+                <!-- Попап поиска -->
+                <form class="search-link-popup" name="search-form" id="search" action="url" method="get" >
+                        <input type="text" name="input-searh" id="what-search" placeholder="Что ищем?">
+                </form>
+                <div class="login-link">Вход</div>
+                <!-- Попап входа -->
+                <form class="login-link-popup" name="login-form" id="login" action="url" method="post" >
+                    <input type="email" name="email" id="email" placeholder="Электронная почта" >
+                    <input type="password" name="password" id="pass" placeholder="Пароль">
+                    <button>Войти</button>
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                </form>
                 <div class="basket-link">Пусто</div>
             </nav>
             <div class="phone">
@@ -32,7 +52,13 @@
                     <img src="http://placehold.it/367x582" width="367" height="582" alt="Крем-брюле и пломбир с малиновым джемом">
                     <!-- При вставке картинки исправить размер -->
                     <p>Крем-брюле и пломбир с малиновым джемом</p>
-                    <!-- предпологаемое место для форм слайдера -->
+                    <!-- предпологаемое место для переключателей слайдера, подписи для стилизации -->
+                    <label class="slide-offer-switch" for="btn1"></label>
+                    <input type="radio" name="slide-offer-switch" id="btn1">
+                    <label class="slide-offer-switch"for="btn2" ></label>
+                    <input type="radio" name="slide-offer-switch" id="btn2">
+                    <label class="slide-offer-switch" for="btn3"></label>
+                    <input type="radio" name="slide-offer-switch" id="btn3">
                     <button class="btn-slider">Возьми оба!</button>
                 </div>
             </section>
@@ -159,6 +185,14 @@
                         (с 10 до 20 ежедневно)
                     </p>
                     <button class="feed-back-btn">Форма обратной связи</button>
+                    <!-- Попап обратной связи -->
+                    <form class="feed-back-popup"name="feed-back-form" id="back" action="url" method="post">
+                        <strong>Мы обязательно вам ответим!</strong>
+                        <input type="text" name="name" id="name" placeholder="Как вас зовут?">
+                        <input type="email" name="email-feed-back" id="email-feed-back-id" placeholder="Ваша почта для ответа">
+                        <textarea name="text-feed-back" id="text-feed" placeholder="Напишите что-нибудь"></textarea>
+                        <button>Отправить</button>
+                    </form>
                 </section>
             </section>
         </main>
