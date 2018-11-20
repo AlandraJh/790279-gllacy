@@ -12,16 +12,49 @@
                 </a>
                 <ul class="site-navigation">
                     <li><a href="catalog.html">Каталог</a></li>
+                    <!-- Попап навигации -->
+                    <ul class="site-navigation-popup">
+                            <li class="new-item"><a href="#">Новинки</a></li>
+                            <li><a>Сливочное</a></li>
+                            <li><a href="#">Щербеты</a></li>
+                            <li><a href="#">Фруктовый лед</a></li>
+                            <li><a href="#">Мелонин</a></li>
+                        </ul>
                     <li><a href="#">Доставка и оплата</a></li>
                     <li><a href="#">О Компании</a></li>
                 </ul>
-                <div class="login-link">Вход</div>
                 <div class="search-link">Поиск</div>
-                <div class="basket-link">Пусто</div>
+                <div class="login-link">Вход</div>
+                <div class="basket-link">2 товара</div>
+                <!-- Черновая наметка попапа корзины -->
+                <div class="backet-link-popup">
+                    <table class="backet-table">
+                    <caption class="visually-hidden">Товары в корзине</caption>
+                        <tr>
+                            <td><button class="basket-remove">Удалить</button></td>
+                            <td><img scr="http://placehold.it/33x33" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+                            <td>Пломбир с апельсиновым джемом</td>
+                            <td>1,5 кг х <span>200 руб.</span></td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td><img scr="http://placehold.it/33x33" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                            <td>1,5 кг х <span>300 руб.</span></td>
+                            <td>450 руб.</td>
+                        </tr>
+                        <tr class="total">
+                            <td><button class="basket-remove">Удалить</button></td>
+                            <td>Итого</td>
+                            <td>750руб.</td>
+                        </tr>
+                    </table>
+                    <a href="#"class="order">Оформить заказ</a>
+                </div>
             </nav>
             <div class="phone">
                 <p class="work-time">С 10 до 20, ежедневно</p>
-                <p class="phone-number">8 812 450-25-25</p>
+                <a class="phone-number" href="tel:8xxxyyyxxyy">8 812 450-25-25</a>
             </div>
         </header>
         <main class="container">
@@ -33,7 +66,39 @@
             <h1>Сливочное мороженое</h1>
             <section class="filters">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
-                <!-- Место для формы -->
+                <!-- Черновик формы -->
+                <div class="filters-form-wrap">
+                <form name="filter" id="filter-id" action="url" method="post">
+                    <span>Сортировка</span>
+                    <select name="filter-kind" id="kind">
+                        <option value="filter-pop">по популярности</option>
+                        <option value="filter-сheap">сначала недорогие</option>
+                        <option value="filter-pricey">сначала дорогие</option>
+                        <option value="filter-fat">по жирности</option>
+                    </select>
+                    <span>Цена: 100 руб. – 500 руб.</span>
+                    <input type="range" min="100" max="500" step="1" id="price-filter">
+                    <span>Жирность</span>
+                    <label>
+                    <input type="radio" name="option-fat" id="fat-0">0%</label>
+                    <label>
+                    <input type="radio" name="option-fat" id="fatless-10" checked>до 10%</label>
+                    <label>
+                    <input type="radio" name="option-fat" id="fatless-30">до 30%</label>
+                    <label>
+                    <input type="radio" name="option-fat" id="fatmore-30-">выше 30%</label>
+                    <span>Наполнители:</span>
+                    <label>шоколадные
+                    <input type="checkbox" name="option-filler" id="choco" checked></label>
+                    <label>сахарные посыпки
+                    <input type="checkbox" name="option-filler" id="filler-sugar" checked></label>
+                    <label>фрукты
+                    <input type="checkbox" name="option-filler" id="filler-fruit"></label>
+                    <label>сиропы
+                    <input type="checkbox" name="option-filler" id="filler-sirup"></label>
+                    <button>Применить</button>
+                </form>
+                </div>
             </section>
             <section class="catalog">
                 <h2 class="visually-hidden">Список видов сливочного мороженного</h2>
