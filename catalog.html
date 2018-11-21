@@ -55,9 +55,10 @@
                     </table>
                 </div>
             </nav>
-            <div class="phone">
-                <p class="work-time">С 10 до 20, ежедневно</p>
-                <a class="phone-number" href="tel:8xxxyyyxxyy">8 812 450-25-25</a>
+            <div class="header-phone">
+                <p class="header-phone-number">С 10 до 20, ежедневно
+                    <a href="tel:88124502525">8 812 450-25-25</a>
+                </p>
             </div>
         </header>
         <main class="container">
@@ -72,33 +73,41 @@
                 <!-- Черновик формы, еще не доделано -->
                 <div class="filters-form-wrap">
                     <form name="filter" id="filter-id" action="url" method="post">
-                        <span>Сортировка</span>
-                        <select name="filter-kind" id="kind">
-                            <option value="filter-pop">по популярности</option>
-                            <option value="filter-сheap">сначала недорогие</option>
-                            <option value="filter-pricey">сначала дорогие</option>
-                            <option value="filter-fat">по жирности</option>
-                        </select>
-                        <legend>Цена: 100 руб. – 500 руб.</legend>
-                        <input type="range" min="100" max="500" step="1" id="price-filter">
-                        <legend>Жирность</legend>
-                        <label>
-                        <input type="radio" name="option-fat" id="fat-0">0%</label>
-                        <label>
-                        <input type="radio" name="option-fat" id="fatless-10" checked>до 10%</label>
-                        <label>
-                        <input type="radio" name="option-fat" id="fatless-30">до 30%</label>
-                        <label>
-                        <input type="radio" name="option-fat" id="fatmore-30-">выше 30%</label>
-                        <legend>Наполнители:</legend>
-                        <label>шоколадные
-                        <input type="checkbox" name="option-filler" id="choco" checked></label>
-                        <label>сахарные посыпки
-                        <input type="checkbox" name="option-filler" id="filler-sugar" checked></label>
-                        <label>фрукты
-                        <input type="checkbox" name="option-filler" id="filler-fruit"></label>
-                        <label>сиропы
-                        <input type="checkbox" name="option-filler" id="filler-sirup"></label>
+                        <fieldset>
+                            <legend>Сортировка</legend>
+                            <select name="filter-kind" id="kind">
+                                <option value="filter-pop">по популярности</option>
+                                <option value="filter-сheap">сначала недорогие</option>
+                                <option value="filter-pricey">сначала дорогие</option>
+                                <option value="filter-fat">по жирности</option>
+                            </select>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Цена: 100 руб. – 500 руб.</legend>
+                            <input type="range" min="100" max="500" step="1" id="price-filter">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Жирность</legend>
+                            <label>
+                            <input type="radio" name="option-fat" id="fat-0">0%</label>
+                            <label>
+                            <input type="radio" name="option-fat" id="fatless-10" checked>до 10%</label>
+                            <label>
+                            <input type="radio" name="option-fat" id="fatless-30">до 30%</label>
+                            <label>
+                            <input type="radio" name="option-fat" id="fatmore-30-">выше 30%</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Наполнители:</legend>
+                            <label>
+                            <input type="checkbox" name="option-filler" id="choco" checked>шоколадные</label>
+                            <label>
+                            <input type="checkbox" name="option-filler" id="filler-sugar" checked>сахарные посыпки</label>
+                            <label>
+                            <input type="checkbox" name="option-filler" id="filler-fruit">фрукты</label>
+                            <label>
+                            <input type="checkbox" name="option-filler" id="filler-sirup">сиропы</label>
+                        </fieldset>
                         <button>Применить</button>
                     </form>
                 </div>
