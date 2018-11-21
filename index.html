@@ -41,9 +41,10 @@
                 </form>
                 <div class="basket-link">Пусто</div>
             </nav>
-            <div class="phone">
-                <p class="work-time">С 10 до 20, ежедневно</p>
-                <a class="phone-number" href="tel:8xxxyyyxxyy">8 812 450-25-25</a>
+            <div class="header-phone">
+                <p class="header-phone-number">С 10 до 20, ежедневно
+                    <a href="tel:88124502525">8 812 450-25-25</a>
+                </p>
             </div>
         </header>
         <main class="container">
@@ -173,29 +174,30 @@
                 <button class="btn-subscribe">Отправить</button>
             </section>
             <section class="contacts">
-                <h2 class="visually-hidden">Где нас найти?</h2>
+                <h2 class="visually-hidden">Адрес и телефон</h2>
                 <p class="map">
                     <img src="http://placehold.it/1200x430" width="1200" height="430" alt="Карта">
                 </p>
-                <section class="contacts-info">
-                    <h2 class="visually-hidden">Контакты</h2>
+                <div class="contacts-info">
                     <p>Адрес главного офиса и офлайн-магазина:
                         <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
                     </p>
                     <p>Для заказов по телефону:
-                        <span>8 812 450-25-25</span>
+                        <a href="tel:88124502525">8 812 450-25-25</a>
                         (с 10 до 20 ежедневно)
                     </p>
                     <button class="feed-back-btn">Форма обратной связи</button>
                     <!-- Попап обратной связи -->
                     <form class="feed-back-popup" name="feed-back-form" id="back" action="url" method="post">
+                        <h3 class="visually-hidden">Форма обратной связи</h3>
+                        <button class="feed-back-popup-close-btn">Закрыть</button>
                         <strong>Мы обязательно вам ответим!</strong>
                         <input type="text" name="name" id="name" placeholder="Как вас зовут?">
                         <input type="email" name="email-feed-back" id="email-feed-back-id" placeholder="Ваша почта для ответа">
                         <textarea name="text-feed-back" id="text-feed" placeholder="Напишите что-нибудь"></textarea>
                         <button>Отправить</button>
                     </form>
-                </section>
+                </div>
             </section>
         </main>
         <footer class="main-footer">
