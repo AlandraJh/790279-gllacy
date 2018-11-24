@@ -6,17 +6,17 @@
     </head>
     <body>
         <header class="main-header">
-            <nav class="main-navigation">
-                <a class="main-header-logo" href="index.html">
+            <nav class="main-navigation" aria-label="Главная навигация">
+                <a class="main-header-logo">
                 <img src="img\svg\logo.svg" width="154" height="62" alt="Логотип магазина «Глейси»">
                 </a>
                 <ul class="site-navigation">
                     <li>
                         <a href="catalog.html">Каталог</a>
-                        <!-- Попап навигации -->
+                        <span class="visually-hidden">Категории каталога</span>
                         <ul class="site-navigation-popup">
                             <li class="new-item"><a href="#">Новинки</a></li>
-                            <li><a href="#">Сливочное</a></li>
+                            <li><a href="catalog.html">Сливочное</a></li>
                             <li><a href="#">Щербеты</a></li>
                             <li><a href="#">Фруктовый лед</a></li>
                             <li><a href="#">Мелонин</a></li>
@@ -25,23 +25,26 @@
                     <li><a href="#">Доставка и оплата</a></li>
                     <li><a href="#">О Компании</a></li>
                 </ul>
-                <div class="search-link">Поиск</div>
-                <!-- Попап поиска -->
-                <form class="search-link-popup" name="search-form" id="search" action="url" method="get" >
-                    <input type="text" name="input-searh" id="what-search" placeholder="Что ищем?">
+                <button class="search-btn">Поиск</button>
+                <span class="visually-hidden">Форма поиска</span>
+                <form class="search-btn-popup" name="search-form" id="search" action="https://echo.htmlacademy.ru" method="get">
+                    <label for="search" class=""visually-hidden">Что ищем?</label>
+                    <input type="search" name="input-searh" id="what-search" placeholder="Что ищем?"><button class="visually-hidden" type="submit">Найти</button>
                 </form>
-                <div class="login-link">Вход</div>
-                <!-- Попап входа -->
-                <form class="login-link-popup" name="login-form" id="login" action="url" method="post" >
+                <button class="login-btn">Вход</button>
+                <span class="visually-hidden">Форма входа</span>
+                <form class="login-btn-popup" name="login-form" id="login" action="https://echo.htmlacademy.ru" method="post" >
+                    <label for="email" class="visually-hidden">Электронная почта</label>
                     <input type="email" name="email" id="email" placeholder="Электронная почта" >
+                    <label for="pass" class="visually-hidden">Пароль</label>
                     <input type="password" name="password" id="pass" placeholder="Пароль">
-                    <button>Войти</button>
+                    <button class="btn" type="submit">Войти</button>
                     <a href="#">Забыли пароль?</a>
                     <a href="#">Новая регистрация</a>
                 </form>
                 <div class="basket-link">Пусто</div>
             </nav>
-            <div class="header-phone">
+            <div class="header-phone" aria-label="Время работы и телефон">
                 <p class="header-phone-number">С 10 до 20, ежедневно
                     <a href="tel:88124502525">8 812 450-25-25</a>
                 </p>
@@ -52,7 +55,7 @@
             <section class="slider">
                 <h2 class="visually-hidden">Предложение</h2>
                 <div class="slide-offer">
-                    <img src="img\ice-cream-promo-1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
+                    <img src="img\ice-cream-promo-1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом фото">
                     <!-- При вставке картинки исправить размер -->
                     <p>Крем-брюле и пломбир с малиновым джемом</p>
                     <!-- предпологаемое место для переключателей слайдера, подписи для стилизации -->
@@ -84,7 +87,7 @@
                     <li class="best-item">
                         <p class="catalog-item-image">
                             <a href="catalog.html">
-                            <img src="img\goods\ice-cream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                            <img src="img\goods\ice-cream-1.jpg" width="267" height="267" alt="Мороженое сливочное с апельсиновым джемом и цитрусовой стружкой фото">
                             </a>
                         </p>
                         <p class="catalog-item-price">310₽<span class="weight">/кг</span></p>
@@ -97,7 +100,7 @@
                     <li class="best-item">
                         <p class="catalog-item-image">
                             <a href="catalog.html">
-                            <img src="img\goods\ice-cream-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                            <img src="img\goods\ice-cream-2.jpg" width="267" height="267" alt="Мороженое сливочно-кофейное с кусочками шоколада фото">
                             </a>
                         </p>
                         <p class="catalog-item-price">380₽<span class="weight">/кг</span></p>
@@ -110,7 +113,7 @@
                     <li class="best-item">
                         <p class="catalog-item-image">
                             <a href="catalog.html">
-                            <img src="img\goods\ice-cream-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                            <img src="img\goods\ice-cream-3.jpg" width="267" height="267" alt="Мороженое сливочно-клубничное с присыпкой из белого шоколада фото">
                             </a>
                         </p>
                         <p class="catalog-item-price">355₽<span class="weight">/кг</span></p>
@@ -123,7 +126,7 @@
                     <li class="best-item">
                         <p class="catalog-item-image">
                             <a href="catalog.html">
-                            <img src="img\goods\ice-cream-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                            <img src="img\goods\ice-cream-4.jpg" width="267" height="267" alt="Мороженое сливочное крем-брюле с карамельной подливкой фото">
                             </a>
                         </p>
                         <p class="catalog-item-price">415₽<span class="weight">/кг</span></p>
@@ -171,14 +174,14 @@
                     что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
                 </p>
                 <!-- Место для формы  -->
-                <button class="btn-subscribe">Отправить</button>
+                <button class="btn-subscribe" type="submit">Отправить</button>
             </section>
             <section class="contacts">
                 <h2 class="visually-hidden">Адрес и телефон</h2>
                 <p class="map">
-                    <img src="img\map(temp).jpg" width="1200" height="430" alt="Карта">
+                    <img src="img\map(temp).jpg" width="1200" height="430" alt="Карта, описывает местоположение магазина, адрес: ул. Большая Конюшенная 19/8, Санкт-Петербург">
                 </p>
-                <div class="contacts-info">
+                <div class="contacts-info" aria-label="Блок с информацией об адресе и телефоне">
                     <p>Адрес главного офиса и офлайн-магазина:
                         <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
                     </p>
@@ -188,14 +191,17 @@
                     </p>
                     <button class="feed-back-btn">Форма обратной связи</button>
                     <!-- Попап обратной связи -->
-                    <form class="feed-back-popup" name="feed-back-form" id="back" action="url" method="post">
+                    <form class="feed-back-popup" name="feed-back-form" id="back" action="https://echo.htmlacademy.ru" method="post">
                         <h3 class="visually-hidden">Форма обратной связи</h3>
                         <button class="feed-back-popup-close-btn">Закрыть</button>
                         <strong>Мы обязательно вам ответим!</strong>
+                        <label for="name" class="visually-hidden">Имя</label>
                         <input type="text" name="name" id="name" placeholder="Как вас зовут?">
+                        <label for="email-feed-back-id" class="visually-hidden">Ваша почта для ответа</label>
                         <input type="email" name="email-feed-back" id="email-feed-back-id" placeholder="Ваша почта для ответа">
+                        <label for="text-feed" class="visually-hidden">Поле для сообщения</label>
                         <textarea name="text-feed-back" id="text-feed" placeholder="Напишите что-нибудь"></textarea>
-                        <button>Отправить</button>
+                        <button class="btn" type="submit">Отправить</button>
                     </form>
                 </div>
             </section>
@@ -203,12 +209,12 @@
         <footer class="main-footer">
             <div class="footer-social">
                 <ul>
-                    <li><a class="social-button" href="#">Вконтакте</a></li>
-                    <li><a class="social-button" href="#">Фейсбук</a></li>
-                    <li><a class="social-button" href="#">Инстаграм</a></li>
+                    <li><a class="social-button" href="#" aria-label="Группа магазина Глейси в соцсети Вконтакте">Вконтакте</a></li>
+                    <li><a class="social-button" href="#" aria-label="Группа магазина Глейси в соцсети Фейсбук">Фейсбук</a></li>
+                    <li><a class="social-button" href="#" aria-label="Группа магазина Глейси в соцсети Инстаграм">Инстаграм</a></li>
                 </ul>
             </div>
-            <div class="about-us">
+            <div class="about-us" aria-label="Иная информация о нас" >
                 <ul>
                     <li class="about-us-partners"><a href="#">Для поставщиков</a></li>
                     <li><a href="#">О производстве</a></li>
@@ -218,8 +224,8 @@
             </div>
             <div class="footer-copyright">
                 <a class="logo-creators" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img src="img\svg\logo-htmlacademy.svg" width="107" height="38" alt="Логотип HTML Academy"></a>
-                <p>Сделано в <a class="link-creators" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>&#169; 2017</p>
+                <img src="img\svg\logo-htmlacademy.svg" width="107" height="38" alt="Логотип HTML Academy"aria-label="Профессиональный онлайн‑курс HTML и CSS, уровень 1" ></a>
+                <p>Сделано в <a class="link-creators" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Профессиональный онлайн‑курс HTML и CSS, уровень 1">HTML Academy</a>&#169; 2017</p>
             </div>
         </footer>
     </body>
