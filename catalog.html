@@ -3,35 +3,40 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Глейси</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="main-header">
             <nav class="main-navigation" aria-label="Главная навигация">
                 <a class="main-header-logo" href="index.html">
-                <img src="img/svg/logo.svg" width="154" height="62" alt="Логотип магазина «Глейси»">
+                    <img src="img/svg/logo.svg" width="154" height="62" alt="Логотип магазина «Глейси»">
                 </a>
                 <ul class="site-navigation">
                     <li>
                         <a href="catalog.html">Каталог</a>
                         <span class="visually-hidden">Категории каталога</span>
-                        <ul class="site-navigation-popup">
+                        <div class="navigation-popup-wrap" >
+                        <ul class="navigation-popup">
                             <li class="new-item"><a href="#">Новинки</a></li>
                             <li><a>Сливочное</a></li>
                             <li><a href="#">Щербеты</a></li>
                             <li><a href="#">Фруктовый лед</a></li>
                             <li><a href="#">Мелонин</a></li>
                         </ul>
+                    </div>
                     </li>
                     <li><a href="#">Доставка и оплата</a></li>
                     <li><a href="#">О Компании</a></li>
                 </ul>
-                <button class="search-btn">Поиск</button>
+                <button class="search-btn nav-btn">Поиск</button>
                 <span class="visually-hidden">Форма поиска</span>
                 <form class="search-btn-popup" name="search-form" id="search" action="https://echo.htmlacademy.ru" method="get">
                     <label for="what-search" class="visually-hidden">Что ищем?</label>
                     <input type="search" name="input-searh" id="what-search" placeholder="Что ищем?"><button class="visually-hidden">Найти</button>
                 </form>
-                <button class="login-btn">Вход</button>
+                <button class="login-btn nav-btn">Вход</button>
                 <span class="visually-hidden">Форма входа</span>
                 <form class="login-btn-popup" name="login-form" id="login" action="https://echo.htmlacademy.ru" method="post" >
                     <label for="email" class="visually-hidden">Электронная почта</label>
@@ -64,7 +69,7 @@
                             <td colspan="5">Итого 750руб.</td>
                         </tr>
                         <tr>
-                            <td colspan="5"><a href="#" class="order">Оформить заказ</a></td>
+                            <td colspan="5"><a href="#" class=" btn order">Оформить заказ</a></td>
                         </tr>
                     </table>
                 </div>
@@ -100,7 +105,7 @@
                         </fieldset>
                         <fieldset>
                             <legend>Жирность</legend>
-                            <ul>
+                            <ul class="fat-list">
                                 <li><label><input type="radio" name="option-fat" id="fat-0">0%</label></li>
                                 <li><label><input type="radio" name="option-fat" id="fatless-10" checked>до 10%</label></li>
                                 <li><label><input type="radio" name="option-fat" id="fatless-30">до 30%</label></li>
@@ -109,7 +114,7 @@
                         </fieldset>
                         <fieldset>
                             <legend>Наполнители:</legend>
-                            <ul>
+                            <ul  class="filler-list">
                                 <li><label><input type="checkbox" name="option-filler" id="choco" checked>шоколадные</label></li>
                                 <li><label><input type="checkbox" name="option-filler" id="filler-sugar" checked>сахарные посыпки</label></li>
                                 <li><label><input type="checkbox" name="option-filler" id="filler-fruit">фрукты</label></li>
@@ -123,7 +128,7 @@
                 <h2 class="visually-hidden">Список видов сливочного мороженного</h2>
                 <ul class="catalog-list">
                     <li class="catalog-item">
-                        <img src="img/ice-cream-1.jpg" width="267" height="267" alt="Мороженое сливочное с апельсиновым джемом и цитрусовой стружкой фото">
+                        <img src="img/goods/ice-cream-1.jpg" width="267" height="267" alt="Мороженое сливочное с апельсиновым джемом и цитрусовой стружкой фото">
                         <p class="catalog-item-price">310₽<span class="weight">/кг</span></p>
                         <h3 class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
                         <a href="#" class="btn">Купить</a>
@@ -204,14 +209,14 @@
         </main>
         <footer class="main-footer">
             <div class="footer-social">
-                <ul>
+                <ul class="social-list">
                     <li><a class="social-button" href="#" aria-label="Группа магазина Глейси в соцсети Вконтакте">Вконтакте</a></li>
                     <li><a class="social-button" href="#" aria-label="Группа магазина Глейси в соцсети Фейсбук">Фейсбук</a></li>
                     <li><a class="social-button" href="#" aria-label="Группа магазина Глейси в соцсети Инстаграм">Инстаграм</a></li>
                 </ul>
             </div>
             <div class="about-us" aria-label="Иная информация о нас">
-                <ul>
+                <ul class="about-us-list">
                     <li class="about-us-partners"><a href="#">Для поставщиков</a></li>
                     <li><a href="#">О производстве</a></li>
                     <li><a href="#">Наши документы</a></li>
@@ -226,3 +231,5 @@
         </footer>
     </body>
 </html>
+
+
