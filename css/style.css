@@ -1,3 +1,12 @@
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+    html {
+        box-sizing: border-box;
+    }
+
     body {
         margin: 0px;
         font-family: Roboto, Arial, sans-serif;
@@ -8,19 +17,170 @@
         background-color: #849d8f;
     }
 
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        clip: rect(0, 0, 0, 0);
+      }
+
     a {
         text-decoration: none;
         color: #ffffff;
     }
 
+/* ======Слайдер====== */
+    .site-wrapper {
+        min-width: 940px;
+        background-color: #849d8f;
+        background-image: url("../img/ice-cream-promo-1.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        transition: background-image 0.5s ease, background-color 0.5s ease;
+    }
+
+    .site-wrapper::before,
+    .site-wrapper::after {
+        content: "";
+    visibility: hidden;
+    }
+
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0 27px;
+    }
+
+    .main-navigation {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+    }
+
+    .slide-offer {
+        position: relative;
+        padding-top: 321px;
+        text-align: center;
+        color: #ffffff;
+      }
+
+    .slide-title {
+        width: 700px;
+        margin: 0 auto;
+        margin-bottom: 27px;
+        font-size: 60px;
+        line-height: 60px;
+         font-weight: 800;
+      }
+
+    .slider-controls {
+        position: absolute;
+        bottom: 63px;
+        left: 0;
+        z-index: 20;
+        font-size: 0;
+      }
+
+      .slider-controls label {
+            display: inline-block;
+            width: 17px;
+            height: 17px;
+            margin-right: 8px;
+            vertical-align: top;
+            background-color: transparent;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            cursor: pointer;
+      }
+      .slide {
+        display: none;
+      }
+      /* Смена фона */
+      #product-1:checked ~ .site-wrapper {
+        background-color: #849d8f;
+        background-image: url("../img/ice-cream-promo-1.png");
+      }
+
+      #product-2:checked ~ .site-wrapper {
+        background-color: #8996a6;
+        background-image: url("../img/ice-cream-promo-2.png");
+      }
+
+      #product-3:checked ~ .site-wrapper {
+        background-color: #9d8b84;
+        background-image: url("../img/ice-cream-promo-3.png");
+      }
+
+        /* Кнопки слайдера */
+    .btn {
+        text-decoration: none;
+        border: none;
+        color: #fefefe;
+        font-weight:700;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 18px;
+        line-height: 24px;
+        background-image: linear-gradient(to top, #e74a35, #f26843);
+        }
+
+    .btn:hover,
+    .btn:focus {
+        box-shadow: 0px 2px 2px 0 #ac1000;
+        background-image: linear-gradient(to top, #e74a35, #f26843),
+                            linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+        }
+
+    .btn:active{
+        box-shadow: inset 0px 2px 2px 0 #942718;
+        background-image: linear-gradient(to bottom, #e74a35, #f26843),
+                            linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+        }
+
+    .btn-slider {
+        display: inline-block;
+        padding: 12px 44px;
+
+        font-weight: 600;
+        font-size: 31px;
+        line-height: 41px;
+        text-align: center;
+        color: #ffffff;
+        vertical-align: top;
+        text-decoration: none;
+        text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+        background: #f26843;
+        background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+        border-radius: 50px;
+        box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+        border: none;
+        cursor: pointer;
+      }
+
+    .btn-slider:hover {
+        background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+        box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+      }
+
+    .btn-slider:active {
+        background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+        box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+      }
+
     /*Шапка и попапы в ней*/
 
+    [class$="-list"],
     .site-navigation {
         list-style: none;
+        padding:0px;
+        margin:0px;
     }
 
     .site-navigation a {
-        font-weight: bold;
+        font-size:16px;
+        line-height: 18px;
+        font-weight: 700;
     }
 
     .site-navigation a:hover,
@@ -35,8 +195,6 @@
     }
 
     .navigation-popup-wrap {
-        width: 143px;
-        height: 171px;
         box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
         background-color: #f8f7f4;
         border-radius: 5px;
@@ -67,22 +225,20 @@
         box-shadow:none;
     }
 
-     .navigation-popup .new-item a{
-        font-weight: bold;
+     .new-item a {
+        font-weight: 700;
     }
-    .header-phone-number {
+    .work-hour {
         font-size: 14px;
     }
 
-    .header-phone-number a {
+    .header-phone а {
         font-size: 22px;
         line-height: 24px;
-        font-weight: bold;
+        font-weight: 700;
     }
 
     .backet-btn-popup {
-        width: 540px;
-        height: 242px;
         border-radius: 5px;
         box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
         background-color: #f8f7f4;
@@ -112,16 +268,16 @@
         border:1px solid #d3d3d2;
         color: #323232;
         border-radius:5px;
-        width: 311px;
-        height:44px;
+        width: 309px;
+        height:42px;
     }
 
     .login-btn-popup input {
         border:1px solid #d3d3d2;
         color: #323232;
         border-radius:5px;
-        width: 241px;
-        height:44px;
+        width: 239px;
+        height:42px;
     }
 
     .login-btn-popup a  {
@@ -135,38 +291,6 @@
         color:#e84d37;
     }
 
-    .btn {
-    text-decoration: none;
-    border: none;
-    color: #fefefe;
-    font-weight:700;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 18px;
-    line-height: 24px;
-    background-image: linear-gradient(to top, #e74a35, #f26843);
-    }
-
-    .btn:hover,
-    .btn:focus {
-        box-shadow: 0px 2px 2px 0 #ac1000;
-        background-image: linear-gradient(to top, #e74a35, #f26843),
-                        linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
-    }
-
-    .btn:active{
-        box-shadow: inset 0px 2px 2px 0 #942718;
-        background-image: linear-gradient(to bottom, #e74a35, #f26843),
-                        linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
-    }
-
-    .btn-slider {
-        font-size:32px;
-        line-height:44px;
-        text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
-    }
-
-
     /* Секции акций */
     .slide-offer p {
         font-size: 60px;
@@ -176,12 +300,11 @@
 
     .raspberry-offer,
     .chocolate-offer {
-        width: 560px;
-        height: 229px;
         font-size: 18px;
         line-height: 22px;
         border-radius: 15px;
         font-weight: 700;
+        background-repeat:no-repeat;
     }
 
     .raspberry-offer h3,
@@ -193,18 +316,18 @@
     .raspberry-offer {
         background-color:#6f1e2e;
         background-image:url(../img/bg-promo-berry.jpg);
+        min-width: 560px;
+        min-height: 229px;
     }
 
     .chocolate-offer {
         background-color:#4d3428;
         background-image:url(../img/bg-promo-choco.jpg);
+        min-width: 560px;
+        min-height: 229px;
     }
 
     /* Хиты и товары */
-
-    [class$="-list"] {
-        list-style: none;
-    }
 
     .catalog-item-price {
         font-size: 45px;
@@ -221,12 +344,12 @@
     .catalog-item-title {
         color: #ffffff;
         font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
     }
 /* Остальные блоки */
 
     .features  {
-        width: 1146px;
-        height: 306px;
         background-color: #e2d6be;
         background-image:url(../img/feature-bg.jpg);
         border-radius: 15px;
@@ -238,8 +361,6 @@
     }
 
     .news-blog {
-        width: 560px;
-        height: 220px;
         border-radius: 15px;
         color:#323232;
         background-color:#f9fafa;
@@ -314,15 +435,15 @@
     }
 
     .feed-back-popup input {
-        width: 267px;
-        height: 44px;
+        width: 265px;
+        height: 42px;
         border-radius: 5px;
         border:1px solid #d3d3d2;
     }
 
     .feed-back-popup textarea {
-        width: 428px;
-        height: 155px;
+        width: 426px;
+        height: 153px;
         border-radius: 5px;
         border:1px solid #d3d3d2;
         resize: none;
@@ -362,17 +483,60 @@
 
 
 
+    /* Временное отключение попапов и скрытых элементов */
+     [class$="-popup"] {
+         display: none;
+    }
+    /* ------------------ */
 
+    div,section,a,ul,li,p,footer,header{
+        outline: 1px solid red;
+        }
 
+ /* Стили для сетки черновое потом убрать снизу*/
+    .main-header {
+        min-height: 62px;
+    }
 
+    .main-header-logo {
+        margin-top: 8px;
+        margin-right: 27px;
+        width: 154px;
+        height: 62px;
+    }
 
+     .site-navigation {
+        display: flex;
+        min-width: 860px;
+        justify-content: space-between;
+        margin-right: 55px;
+    }
 
+    .main-navigation {
+        display: flex;
 
+    }
 
+    .nav-btn-wrap {
+        margin-left: auto;
+    }
 
+    .header-phone {
+        display:flex;
+        flex-direction: row;
+        margin-left: 900px;
+    }
 
+    .promo {
+        display:flex;
+    }
 
+    .best-sellers-list {
+        display: flex;
+    }
 
-
-
-
+    .navigation-popup li {
+        display: inline-block;
+        position: relative;
+        margin-right: 25px;
+    }
