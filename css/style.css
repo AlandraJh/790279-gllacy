@@ -381,13 +381,13 @@
         border-radius: 15px;
         font-weight: 700;
         background-repeat: no-repeat;
-        }
+    }
 
     .raspberry-offer h3,
     .chocolate-offer h3 {
         font-size: 35px;
         line-height: 41px;
-        padding-top:20px;
+        padding-top: 20px;
     }
 
     .raspberry-offer {
@@ -454,7 +454,6 @@
         margin-bottom: 44px;
     }
 
-
     .news-blog {
         border-radius: 15px;
         color: #323232;
@@ -495,7 +494,7 @@
         border: 1px solid #d3d3d2;
     }
 
-    .map{
+    .map {
         display: flex;
         justify-content: center;
     }
@@ -553,16 +552,25 @@
         resize: none;
     }
 
+    /* Каталог */
+
     .breadcrumbs {
+        display: flex;
         list-style: none;
         font-size: 16px;
         line-height: 18px;
+    }
+
+    .filters {
+        display: flex;
+        margin-bottom: 40px;;
     }
 
     .filters fieldset {
         border: none;
         line-height: 18px;
         font-weight: 500;
+        margin-right: 14px;
     }
 
     .filters legend {
@@ -571,9 +579,48 @@
         line-height: 16px
     }
 
+    .filters-col-1,
+    .filters-col-2 {
+        display: flex;
+    }
+
+    .fat-list,
+    .filler-list {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 14px;
+    }
+
+    .fat-list li:not(:last-of-type),
+    .filler-list li:not(:last-of-type){
+        margin-right: 14px;
+    }
+
+    .catalog-list {
+        display: flex;
+        margin-bottom: 40px;
+
+    }
+
+
+    }
+    .catalog-item {
+        display: flex;
+        flex-direction:column;
+
+
+        min-height: 320px;
+        min-width:267px;
+    }
+
+    .catalog-item-title {
+        word-wrap: break-word;
+    }
+
     .main-footer {
         display: flex;
-        justify-content: space-between;;
+        justify-content: space-between;
+        ;
     }
 
     .about-us-list {
