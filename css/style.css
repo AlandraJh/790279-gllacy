@@ -227,7 +227,6 @@
     .container {
         width: 1146px;
         margin: 0 auto;
-        /* padding: 0 27px */
     }
 
     .slide-offer {
@@ -406,7 +405,18 @@
     .best-sellers-list {
         display: flex;
         margin-bottom: 40px;
+    }
 
+    .catalog-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+
+    }
+
+    .catalog-item {
+        min-height: 320px;
+        min-width: 267px;
     }
 
     .catalog-item-price {
@@ -426,6 +436,7 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 22px;
+        text-align: center;
     }
 
     /* Остальные блоки */
@@ -563,7 +574,7 @@
 
     .filters {
         display: flex;
-        margin-bottom: 40px;;
+        margin-bottom: 40px;
     }
 
     .filters fieldset {
@@ -592,35 +603,33 @@
     }
 
     .fat-list li:not(:last-of-type),
-    .filler-list li:not(:last-of-type){
+    .filler-list li:not(:last-of-type) {
         margin-right: 14px;
     }
 
-    .catalog-list {
+    .pagination-list {
         display: flex;
-        margin-bottom: 40px;
+        justify-content: flex-end;
 
     }
 
-
-    }
-    .catalog-item {
-        display: flex;
-        flex-direction:column;
-
-
-        min-height: 320px;
-        min-width:267px;
-    }
-
-    .catalog-item-title {
-        word-wrap: break-word;
+    .pagination-item {
+        padding-right: 27px;
     }
 
     .main-footer {
         display: flex;
         justify-content: space-between;
-        ;
+
+    }
+
+    .social-list {
+        display: flex;
+
+    }
+
+    .social-button {
+        margin-right: 17px;
     }
 
     .about-us-list {
