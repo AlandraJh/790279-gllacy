@@ -117,9 +117,9 @@
         min-width: 33px;
         min-height: 33px;
         border: 1px solid transparent;
-        border-radius:15px;
+        border-radius: 15px;
         background-color: rgba(255, 255, 255, 0.2);
-}
+    }
 
     .search-btn svg {
         margin-top: 3px;
@@ -156,15 +156,15 @@
     }
 
     .login-link:before {
-    content: "";
-    position: absolute;
-    top: 7px;
-    left: 16px;
-    width: 20px;
-    height: 19px;
-    background-image: url(../img/icons/spritesheet.png);
-    background-position: -193px -64px;
-}
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: 16px;
+        width: 20px;
+        height: 19px;
+        background-image: url(../img/svg/entrance.svg);
+        background-position: -193px -64px;
+    }
 
 
     .navigation-popup {
@@ -187,7 +187,7 @@
         -o-border-radius: 5px;
     }
 
-    .site-navigation >li:hover .navigation-popup,
+    .site-navigation>li:hover .navigation-popup,
     .site-navigation>li:focus .navigation-popup {
         display: block;
     }
@@ -331,7 +331,7 @@
         background-repeat: no-repeat;
         background-position: top center;
         transition: background-image 0.5s ease, background-color 0.5s ease;
-}
+    }
 
     .site-wrapper::before,
     .site-wrapper::after {
@@ -416,24 +416,24 @@
     #product-1:hover~.site-wrapper label[for="product-1"],
     #product-2:hover~.site-wrapper label[for="product-2"],
     #product-3:hover~.site-wrapper label[for="product-3"] {
-        background-color: rgba(248,247,244,0.4) ;
+        background-color: rgba(248, 247, 244, 0.4);
 
     }
 
     #product-1:checked~.site-wrapper {
-        background-image:url(../img/ice-cream-promo-1.png);
+        background-image: url(../img/ice-cream-promo-1.png);
         background-color: #849d8f;
 
     }
 
     #product-2:checked~.site-wrapper {
-        background-image:url(../img/ice-cream-promo-2.png);
+        background-image: url(../img/ice-cream-promo-2.png);
         background-color: #8996a6;
 
     }
 
     #product-3:checked~.site-wrapper {
-        background-image:url(../img/ice-cream-promo-3.png);
+        background-image: url(../img/ice-cream-promo-3.png);
         background-color: #9d8b84;
 
     }
@@ -444,7 +444,7 @@
         display: inline-block;
         vertical-align: middle;
         padding: 10px 17px;
-        border:none;
+        border: none;
         color: #fefefe;
         font-weight: 700;
         text-align: center;
@@ -460,10 +460,10 @@
     }
 
     .btn:hover,
-    .btn:focus   {
-            background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-            box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
-         }
+    .btn:focus {
+        background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+        box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+    }
 
     .btn:active {
         box-shadow: inset 0px 2px 2px 0 #942718;
@@ -513,7 +513,7 @@
         flex-direction: column;
         width: 560px;
         min-height: 229px;
-        box-sizing:content-box;
+        box-sizing: content-box;
         font-size: 18px;
         line-height: 22px;
         padding-left: 20px;
@@ -559,14 +559,14 @@
     .raspberry-offer {
         background-color: #6f1e2e;
         background-image: url(../img/bg-promo-berry.jpg);
-        background-repeat:repeat;
+        background-repeat: repeat;
         margin-right: 26px;
     }
 
     .chocolate-offer {
         background-color: #4d3428;
         background-image: url(../img/bg-promo-choco.jpg);
-        background-repeat:repeat;
+        background-repeat: repeat;
     }
 
     /* Хиты и товары */
@@ -576,7 +576,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-bottom:23px;
+        margin-bottom: 23px;
     }
 
     .catalog-item {
@@ -600,26 +600,28 @@
     .best-item::after {
         content: "";
         position: absolute;
-        margin-top: -350px;
-        margin-left: -200px;
-        z-index: 1;
+        top: 6px;
+        left: 0;
         width: 61px;
         height: 61px;
+        z-index: 1;
         background: #ffffff url(../img/svg/hit.svg) no-repeat 50% 50%;
         border-radius: 50%;
     }
 
-    /* .catalog-item::before {
-            content: "";
-            position: absolute;
-            right: -150px;
-            width: 293px;
-            min-height: 405px;
-            z-index: 1;
-            opacity: 0.2;
-            box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-            background-color: #f8f7f4;
-          } */
+    .catalog-item:hover::before {
+        content: "";
+        position: absolute;
+        min-height: 405px;
+        top: -7px;
+        left: -13px;
+        width: 293px;
+        z-index: 2;
+        opacity: 0.2;
+        box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+        background-color: #f8f7f4;
+    }
+
 
     .catalog-item-price {
         position: relative;
@@ -646,12 +648,39 @@
         margin-top: -25px;
     }
 
-    .catalog-item-title span {
+    .catalog-item-title a {
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-
     }
 
+    .catalog-item-title a:hover,
+    .catalog-item-title a:focus {
+        border-bottom: 1px solid rgba(255 188 158 0.3);
+        color: rgba(255 188 158);
+        outline: none;
+    }
 
+    .item-btn {
+        display: none;
+        box-sizing: border-box;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 200px;
+        bottom: -40px;
+        padding-left: 15px;
+        padding-right: 15px;
+        z-index: 3;
+    }
+
+    .catalog-item:hover {
+        position: relative;
+        z-index: 1;
+    }
+
+    .catalog-item:hover .item-btn,
+    .catalog-item:hover .catalog-item:before {
+        display: block;
+    }
 
     /* Остальные блоки */
 
@@ -669,7 +698,7 @@
 
     }
 
-    .features-list  {
+    .features-list {
         display: block;
         position: relative;
         margin-left: 50px;
@@ -687,53 +716,53 @@
 
     .feature-item-make,
     .feature-item-consist {
-         padding-right:5px;
+        padding-right: 5px;
         padding-left: 20px;
     }
 
     .feature-item-make {
-        margin-bottom:20px;
+        margin-bottom: 20px;
     }
 
     .feature-item-make:before {
         content: "";
         position: absolute;
-        margin-top:-20px;
-        margin-left:-60px;
-        z-index:1;
+        margin-top: -20px;
+        margin-left: -60px;
+        z-index: 1;
         width: 61px;
         height: 61px;
         background: url(../img/svg/ice-cream.svg) no-repeat 50% 50%;
     }
 
-     .feature-item-consist:before {
+    .feature-item-consist:before {
         content: "";
         position: absolute;
-        margin-top:-20px;
-        margin-left:-60px;
-        z-index:1;
+        margin-top: -20px;
+        margin-left: -60px;
+        z-index: 1;
         width: 61px;
         height: 61px;
         background: url(../img/svg/eco.svg) no-repeat 50% 50%;
     }
 
-     .feature-item-suppliers:before {
+    .feature-item-suppliers:before {
         content: "";
         position: absolute;
-        margin-top:-20px;
-        margin-left:-60px;
-        z-index:1;
+        margin-top: -20px;
+        margin-left: -60px;
+        z-index: 1;
         width: 61px;
         height: 61px;
         background: url(../img/svg/cow.svg) no-repeat 50% 50%;
     }
 
-.feature-item-delivery:before {
+    .feature-item-delivery:before {
         content: "";
         position: absolute;
-        margin-top:-20px;
-        margin-left:-60px;
-        z-index:1;
+        margin-top: -20px;
+        margin-left: -60px;
+        z-index: 1;
         width: 61px;
         height: 61px;
         background: url(../img/svg/thermometer.svg) no-repeat 50% 50%;
@@ -857,6 +886,15 @@
         line-height: 18px;
     }
 
+    /*.breadcrumbs:not(:last-child):after {
+        content: "»";
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        width: 5px;
+        height: 5px;
+      } */
+
     .filters {
         display: flex;
         margin-bottom: 40px;
@@ -891,6 +929,8 @@
     .filler-list li:not(:last-of-type) {
         margin-right: 14px;
     }
+
+
 
     .pagination-list {
         display: flex;
