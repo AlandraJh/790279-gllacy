@@ -19,13 +19,13 @@
                             </a>
                             <ul class="site-navigation">
                                 <li class="nav-main-item">
-                                    <a class="nav-main-link" href="catalog.html"><span>Каталог</span></a>
+                                    <a class="nav-main-link active-item " href="catalog.html"><span>Каталог</span></a>
                                         <ul class="navigation-popup"  aria-label="Категории каталога подменю" tabindex="1">
                                             <li class="new-item"><a class="first-item" href="#">Новинки</a></li>
                                             <li><a href="catalog.html">Сливочное</a></li>
                                             <li><a href="#">Щербеты</a></li>
                                             <li><a href="#">Фруктовый лед</a></li>
-                                            <li><a class="last-item" href="#">Мелонин</a></li>
+                                            <li><a class="last-item" href="#">Мелорин</a></li>
                                         </ul>
                                 </li>
                                 <li class="nav-main-item"><a class="nav-main-link" href="#"><span>Доставка и оплата</span></a></li>
@@ -48,8 +48,10 @@
                                 </li>
                                 <li class="btn-item login-item">
                                     <a class="login-link nav-btn" href="#">Вход
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#000"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
-                                        <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
+                                            <g fill="#000"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
+                                                <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g>
+                                            </svg>
                                     </a>
                                     <div class="login-btn-popup-wrap">
                                         <form class="login-btn-popup" name="login-form" id="login" action="https://echo.htmlacademy.ru" method="post">
@@ -67,33 +69,33 @@
                                         </form>
                                         </div>
                                 </li>
-                        <li class="btn-item"><a class="nav-btn basket-link basket-not-empty">2 товара
-                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
-                                <path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/>
-                                <path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>
+                        <li class="btn-item" ><a class="nav-btn basket-link basket-not-empty">2 товара
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/>
+                            <path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>
                             </a>
-                            <div class="backet-btn-popup">
-                                <table class="backet-table">
+
+                            <div class="basket-btn-popup">
+                                <table class="basket-table">
                                     <caption class="visually-hidden">Товары в корзине</caption>
                                     <tr>
-                                        <td><button class="basket-remove">Удалить</button></td>
-                                        <td><img src="img/icon-ice-cream-1.png" width="33" height="33" alt="Мороженое пломбир с апельсиновым джемом фото"></td>
-                                        <td>Пломбир с апельсиновым джемом</td>
-                                        <td>1,5 кг х <span>200 руб.</span></td>
-                                        <td>300 руб.</td>
+                                        <td class="basket-delete"><button class="basket-remove-btn"><span class="visually-hidden">Удалить</span></button></td>
+                                        <td class="basket-foto"><img src="img/icon-ice-cream-1.png" width="33" height="33" alt="Мороженое пломбир с апельсиновым джемом фото"></td>
+                                        <td class="basket-item" >Пломбир с апельсиновым джемом</td>
+                                        <td class="basket-account">1,5 кг х <span>200 руб.</span></td>
+                                        <td class="basket-price">300 руб.</td>
                                     </tr>
                                     <tr>
-                                        <td><button class="basket-remove">Удалить</button></td>
-                                        <td><img src="img/icon-ice-cream-2.png" width="33" height="33" alt="Мороженое клубничный пломбир с присыпкой из белого шоколада фото">
-                                        <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                                        <td>1,5 кг х <span>300 руб.</span></td>
-                                        <td>450 руб.</td>
-                                    </tr>
-                                    <tr class="total">
-                                        <td colspan="5">Итого 750руб.</td>
+                                        <td class="basket-delete"><button class="basket-remove-btn"><span class="visually-hidden">Удалить</span></button></td>
+                                        <td class="basket-foto"><img src="img/icon-ice-cream-2.png" width="33" height="33" alt="Мороженое клубничный пломбир с присыпкой из белого шоколада фото">
+                                        <td class="basket-item-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                                        <td class="basket-account-price"> 1,5 кг х <span>300 руб.</span></td>
+                                        <td class="basket-price">450 руб.</td>
                                     </tr>
                                     <tr>
-                                        <td colspan="5"><a href="#" class=" btn order">Оформить заказ</a></td>
+                                        <td class="basket-total" colspan="5">Итого 750 руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="order-btn-wrap" colspan="5"><a href="#" class="btn order-btn">Оформить заказ</a></td>
                                     </tr>
                                 </table>
                             </div>
@@ -114,13 +116,13 @@
                 <li><a href="catalog.html">Каталог</a></li>
                 <li class="breadcrumbs-current">Сливочное</li>
             </ul>
-            <h1>Сливочное мороженое</h1>
+            <h1 class="page-title">Сливочное мороженое</h1>
             <section class="filters">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
                 <form name="filter" id="filter-id" action="https://echo.htmlacademy.ru" method="post">
                     <div class="filters-col-1">
                         <fieldset>
-                            <legend class="legend-form">Сортировка</legend>
+                            <legend class="legend-form-sort">Сортировка</legend>
                             <select class="background-field sorting-form " name="filter-kind" id="kind">
                                 <option value="filter-pop">по популярности</option>
                                 <option value="filter-сheap">сначала недорогие</option>
@@ -146,7 +148,7 @@
                             </div>
                         </fieldset>
                         <fieldset>
-                            <legend>Жирность</legend>
+                            <legend class="legend-form legend-fat">Жирность</legend>
                             <ul class="background-field fat-list">
                                 <li class="fat-option">
                                     <input class="visually-hidden" type="radio" name="option-fat" id="fat-0">
@@ -168,8 +170,8 @@
                     </div>
                     <div class="filters-col-2">
                         <fieldset>
-                            <legend>Наполнители:</legend>
-                            <ul class="filler-list">
+                            <legend  class="legend-form legend-fill">Наполнители:</legend>
+                            <ul class="background-field filler-list">
                                 <li><label for="choco">шоколадные</label>
                                     <input type="checkbox" name="option-filler" id="choco" checked>
                                 </li>
@@ -177,6 +179,7 @@
                                         посыпки</label></li>
                                 <li><label><input type="checkbox" name="option-filler" id="filler-fruit">фрукты</label></li>
                                 <li><label><input type="checkbox" name="option-filler" id="filler-sirup">сиропы</label></li>
+                                <li><label><input type="checkbox" name="option-filler" id="filler-jam">джемы</label></li>
                             </ul>
                         </fieldset>
                         <button>Применить</button>

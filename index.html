@@ -22,12 +22,12 @@
                         <ul class="site-navigation">
                             <li class="nav-main-item">
                                 <a class="nav-main-link" href="catalog.html"><span>Каталог</span></a>
-                                    <ul class="navigation-popup"  aria-label="Категории каталога подменю" tabindex="1">
-                                        <li class="new-item"><a class="first-item" href="#">Новинки</a></li>
+                                    <ul class="navigation-popup"  aria-label="Категории каталога подменю">
+                                        <li class="first-item"><a class="new-item" href="#">Новинки</a></li>
                                         <li><a href="catalog.html">Сливочное</a></li>
                                         <li><a href="#">Щербеты</a></li>
                                         <li><a href="#">Фруктовый лед</a></li>
-                                        <li><a class="last-item" href="#">Мелонин</a></li>
+                                        <li class="last-item"><a href="#">Мелорин</a></li>
                                     </ul>
                             </li>
                             <li class="nav-main-item"><a class="nav-main-link" href="#"><span>Доставка и оплата</span></a></li>
@@ -69,7 +69,7 @@
                                     </form>
                                     </div>
                             </li>
-                            <li class="btn-item"><a class="basket-link nav-btn" href="#">Пусто
+                            <li class="btn-item empty-basket"><a class="basket-link nav-btn" href="#">Пусто
                                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g fill="#FFF">
                                     <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
                                 </a>
@@ -180,10 +180,10 @@
                                 сотрудничество.
                             </li>
                             <li class="feature-item feature-item-consist">
-                                    Для приготовления мороженого используются настоящие
-                                    сливки и молоко высочайшего качества.
-                                    Все дополнительные ингредиенты и добавки произведены из натурального, экологически
-                                    чистого сырья.
+                                Для приготовления мороженого используются настоящие
+                                сливки и молоко высочайшего качества.
+                                Все дополнительные ингредиенты и добавки произведены из натурального, экологически
+                                чистого сырья.
                                 </li>
                             <li class="feature-item feature-item-delivery">
                                 Доставка нашего мороженого до заказчиков
@@ -196,7 +196,7 @@
                     <div class=fellowship>
                         <article class="news-blog">
                             <h2>Новое в нашем блоге</h2>
-                            <a href="#" class="artirle-title">10 способов сервировки фруктовых щербетов к столу</a>
+                            <a href="#" class="blog-title">10 способов сервировки фруктовых щербетов к столу</a>
                         </article>
                         <section class="subscribe subscribe-border">
                             <h2 class="visually-hidden">Подписка на рассылку</h2>
@@ -212,23 +212,29 @@
                     </div>
                     <section class="contacts">
                         <h2 class="visually-hidden">Как нас найти?</h2>
-                        <div class="map"><img src="img/map(temp).jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург"
+                        <div class="map-block"><img class="map" src="img/map(temp).jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург"
                                 width="1200" height="430">
+                                <img class="map-pin" src="img/svg/pin.svg" width="80" height="140" alt="Указатель в виде мороженого">
                             <div class="contacts-info">
-                                <p>Адрес главного офиса и офлайн-магазина:
-                                    <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
-                                <p>Для заказов по телефону:
-                                    <a href="tel:+78124502525">8 812 450-25-25</a>
-                                    (с 10 до 20 ежедневно)</p>
+                                <p class="our-adress">
+                                    <span class="contacts-discription">Адрес главного офиса и офлайн-магазина:</span>
+                                    <span class="contacts-main-info">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+                                </p>
+                                <p class="our-tel">
+                                    <span class="contacts-title">Для заказов по телефону:</span>
+                                    <a class="contacts-tel" href="tel:+78124502525">8 812 450-25-25</a>
+                                    <span class="contacts-discription">(с 10 до 20 ежедневно)</span>
+                                </p>
                                 <a href="#" class="btn">Форма обратной связи</a>
                             </div>
                         </div>
                     </section>
-                    <section class="feed-back-popup">
+                    <section class="feed-back  feed-back-overlay">
                         <h3 class="visually-hidden">Форма обратной связи</h3>
+                        <div class="feed-back-popup">
                         <form name="feed-back-form" id="back" action="https://echo.htmlacademy.ru" method="post">
-                            <button class="feed-back-popup-close-btn">Закрыть</button>
-                            <strong>Мы обязательно вам ответим!</strong>
+                            <button class="popup-close">Закрыть</button>
+                            <h3>Мы обязательно вам ответим!</h3>
                             <label for="name" class="visually-hidden">Имя</label>
                             <input type="text" name="name" id="name" placeholder="Как вас зовут?">
                             <label for="email-feed-back-id" class="visually-hidden">Ваша почта для ответа</label>
@@ -237,6 +243,7 @@
                             <textarea name="text-feed-back" id="text-feed" placeholder="Напишите что-нибудь"></textarea>
                             <button class="btn" type="submit">Отправить</button>
                         </form>
+                    </div>
                     </section>
                 </div>
             </main>
@@ -252,9 +259,9 @@
                 <div class="about-us" aria-label="Иная информация о нас">
                     <ul class="about-us-list">
                         <li class="us-item partners"><a href="#">Для поставщиков</a></li>
-                        <li class="us-item ><a href=" #">О производстве</a></li>
-                        <li class="us-item><a href=" #">Наши документы</a></li>
-                        <li class="us-item><a href=" #">Экологические стандарты</a></li>
+                        <li class="us-item" ><a href="#">О производстве</a></li>
+                        <li class="us-item"><a href=" #">Наши документы</a></li>
+                        <li class="us-item"><a href=" #">Экологические стандарты</a></li>
                     </ul>
                 </div>
                 <div class="footer-copyright">
