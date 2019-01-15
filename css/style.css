@@ -121,6 +121,10 @@ a {
     margin-top:23px;
 }
 
+.main-header-logo {
+    margin-top: -4px;
+}
+
 [class$="-list"] {
     list-style: none;
     padding: 0px;
@@ -203,8 +207,6 @@ a {
     -ms-flex-pack: end;
     justify-content: flex-end;
     min-width: 393px;
-    margin-top: 5px;
-
 }
 
 .navigation-popup {
@@ -216,7 +218,7 @@ a {
     padding: 0px 0;
     min-width: 143px;
     z-index: 2;
-    top: 40px;
+    top: 38px;
     left: -7px;
     margin: 0px;
     list-style: none;
@@ -372,8 +374,8 @@ a {
     fill: #323232;
  }
 
-.btn-item:focus-within path,
-.btn-item:focus-within circle  {
+.base-btn:focus-within path,
+.base-btn:focus-within circle  {
     fill: #323232;
  }
 
@@ -743,6 +745,7 @@ a {
 
 .header-phone {
     width: 1174px;
+    margin-top:-11px;
 }
 
 .work-hour {
@@ -834,16 +837,15 @@ a {
     margin-top: -3px;
     margin: -3px auto;
     margin-bottom: 31px;
-
     font-size: 60px;
     line-height: 60px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .slider-controls {
     position: absolute;
-    bottom: 21px;
-    left: 0;
+    bottom: 32px;
+    left: 26px;
     z-index: 20;
     font-size: 0;
 }
@@ -1085,7 +1087,7 @@ a {
     min-height: 320px;
     width: 267px;
     margin-bottom: 15px;
-    margin-right: 10px;
+    margin-right: 3px;
 }
 
 .catalog-item-image img,
@@ -1106,7 +1108,7 @@ a {
     content: "";
     position: absolute;
     top: 4px;
-    left: 2px;
+    left: 5px;
     width: 61px;
     height: 61px;
     z-index: 1;
@@ -1216,7 +1218,7 @@ a {
     color: #323232;
     width: 1146px;
     margin-bottom: 40px;
-    margin-top: -15px;
+    margin-top: -17px;
     margin-left: 27px;
     margin-right: 10px;
     padding: 25px 21px 21px 20px;
@@ -1419,6 +1421,7 @@ a {
 .map-block iframe {
     position: absolute;
     z-index: 5;
+    border: none;
 }
 
 .contacts-info {
@@ -2049,7 +2052,8 @@ a {
     opacity: 1;
 }
 
-.fill-fieldset .input-checkbox:disabled+label::before  {
+
+.fill-fieldset .input-checkbox:disabled+label::before {
     opacity: 0.4;
 }
 
@@ -2076,7 +2080,6 @@ a {
 .btn-filter:focus {
     background-color: #ffffff;
     color: #323232;
-    outline:none;
 }
 
 .btn-filter:active {
@@ -2105,8 +2108,7 @@ a {
     top:10px;
     width: 1146px;
     height: 1px;
-    opacity: 0.3;
-    background-color: #ffffff;
+
 }
 
 .pagination-list {
