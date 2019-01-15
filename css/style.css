@@ -117,8 +117,8 @@ a {
     flex-wrap: wrap;
     min-width: 600px;
     list-style: none;
-    padding:0px;
-    margin-top:23px;
+    padding: 0px;
+    margin-top: 23px;
 }
 
 .main-header-logo {
@@ -142,17 +142,17 @@ a {
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .nav-main-link::after {
     display: block;
     height: 1px;
     content: "";
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(255, 255, 255, .3);
 }
 
-.nav-main-link:focus-within  {
+.nav-main-link:focus-within {
     background-color: #f7f6f3;
     color: #323232;
     border-radius: 25px;
@@ -372,23 +372,23 @@ a {
 .base-btn:focus circle,
 .base-btn:active circle {
     fill: #323232;
- }
+}
 
 .base-btn:focus-within path,
-.base-btn:focus-within circle  {
+.base-btn:focus-within circle {
     fill: #323232;
- }
+}
 
 .btn-item:hover .nav-btn,
 .btn-item:focus .nav-btn {
     color: #323232;
     background-color: #f7f6f3;
- }
+}
 
- .btn-item:focus-within .nav-btn {
-     color: #323232;
-     background-color: #f7f6f3;
- }
+.btn-item:focus-within .nav-btn {
+    color: #323232;
+    background-color: #f7f6f3;
+}
 
 
 .search-item:focus-within .search-btn {
@@ -519,7 +519,7 @@ a {
 
 
 .nav-login-link svg,
-.basket-link  svg {
+.basket-link svg {
     position: absolute;
     left: 16px;
     top: 6px;
@@ -745,7 +745,7 @@ a {
 
 .header-phone {
     width: 1174px;
-    margin-top:-11px;
+    margin-top: -11px;
 }
 
 .work-hour {
@@ -2087,7 +2087,7 @@ a {
     box-shadow: inset 0px 2px 1px 0 #696969;
     background-color: #ededed;
     border: none;
-    outline:none;
+    outline: none;
 
 }
 
@@ -2097,9 +2097,9 @@ a {
 }
 
 .pagination-block {
-    position:relative;
+    position: relative;
     margin-top: 51px;
-    font-weight:500;
+    font-weight: 500;
     margin-right: 21px;
     margin-bottom: 30px;
 }
@@ -2112,7 +2112,7 @@ a {
     padding: 0 27px;
     width: 98%;
     height: 1px;
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(255, 255, 255, .3);
     background-clip: content-box;
 
 }
@@ -2139,7 +2139,7 @@ a {
     border-radius: 50%;
     min-height: 26px;
     min-width: 27px;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 .prev svg {
@@ -2147,39 +2147,39 @@ a {
 }
 
 .next svg path {
-    fill:rgba(255, 255, 255, 1);
+    fill: rgba(255, 255, 255, 1);
 }
 
 .disabled svg path {
-    fill:rgba(255, 255, 255, 0.2);
+    fill: rgba(255, 255, 255, 0.2);
 }
 
 .pagination-item a:hover,
 .pagination-item a:focus {
-  background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .pagination-item a:active {
-    color:#323232;
+    color: #323232;
     background-color: rgb(255, 255, 255);
 }
 
 .pagination-item-current a,
 .pagination-item-current a:hover {
-    color:#323232;
+    color: #323232;
     background-color: rgb(255, 255, 255);
 }
 
 .prev a:hover,
 .prev a:focus,
 .prev a:active {
-    background-color:transparent;
+    background-color: transparent;
 }
 
 .next a:hover,
 .next a:focus,
 .next a:active {
-    background-color:transparent;
+    background-color: transparent;
 }
 
 .main-footer {
@@ -2204,7 +2204,7 @@ a {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    margin: 34px 0px 0px 28px;
+    margin: 36px 0px 0px 28px;
 }
 
 .social-list .social-btn-item {
@@ -2340,5 +2340,3 @@ a {
     color: rgb(255, 188, 158);
     outline: none;
 }
-
-
