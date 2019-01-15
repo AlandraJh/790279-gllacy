@@ -23,17 +23,17 @@
                         </a>
                         <ul class="site-navigation">
                             <li class="nav-main-item">
-                                <a class="nav-main-link" href="catalog.html"><span>Каталог</span></a>
+                                <a class="nav-main-link" href="catalog.html"><span class="main-link-title">Каталог</span></a>
                                 <ul class="navigation-popup" aria-label="Категории каталога подменю">
-                                    <li class="first-item"><a class="new-item" href="#">Новинки</a></li>
-                                    <li><a href="catalog.html">Сливочное</a></li>
-                                    <li><a href="#">Щербеты</a></li>
-                                    <li><a href="#">Фруктовый лед</a></li>
-                                    <li class="last-item"><a href="#">Мелорин</a></li>
+                                    <li class="popup-item first-item"><a class="new-item" href="#">Новинки</a></li>
+                                    <li class="popup-item"><a href="catalog.html">Сливочное</a></li>
+                                    <li class="popup-item"><a href="#">Щербеты</a></li>
+                                    <li class="popup-item"><a href="#">Фруктовый лед</a></li>
+                                    <li class="popup-item last-popup-item"><a href="#">Мелорин</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-main-item"><a class="nav-main-link" href="#"><span>Доставка и оплата</span></a></li>
-                            <li class="nav-main-item"><a class="nav-main-link" href="#"><span>О Компании</span></a></li>
+                            <li class="nav-main-item"><a class="nav-main-link" href="#"><span class="main-link-title">Доставка и оплата</span></a></li>
+                            <li class="nav-main-item"><a class="nav-main-link" href="#"><span class="main-link-title">О Компании</span></a></li>
                         </ul>
                         <ul class="nav-btn-list">
                             <li class="btn-item search-item">
@@ -46,16 +46,16 @@
                                     <form class="search-btn-popup" name="search-form" id="search" action="https://echo.htmlacademy.ru"
                                         method="get">
                                         <label for="what-search" class="visually-hidden">Что ищем?</label>
-                                        <input type="search" name="input-searh" id="what-search" placeholder="Что ищем?"><button
+                                        <input class="search-input" type="search" name="input-searh" id="what-search" placeholder="Что ищем?"><button
                                             class="visually-hidden" type="submit">Найти</button>
                                     </form>
                                 </div>
                             </li>
                             <li class="btn-item login-item">
-                                <a class="login-link nav-btn" href="#">Вход
+                                <a class="nav-login-link nav-btn" href="#">Вход
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         width="21" height="19" viewBox="0 0 21 19">
-                                        <g fill="#000">
+                                        <g fill="#ffffff">
                                             <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
                                             <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
                                         </g>
@@ -65,27 +65,22 @@
                                     <form class="login-btn-popup" name="login-form" id="login" action="https://echo.htmlacademy.ru"
                                         method="post">
                                         <label for="email" class="visually-hidden">Электронная почта</label>
-                                        <input type="email" name="email" id="email" placeholder="Электронная почта">
+                                        <input class="login-input" type="email" name="email" id="email" placeholder="Электронная почта" required>
                                         <label for="pass" class="visually-hidden">Пароль</label>
-                                        <input type="password" name="password" id="pass" placeholder="Пароль">
-                                        <div class="bottom-row">
-                                            <button class="btn" type="submit">Войти</button>
-                                            <div class="bottom-link-wrap">
-                                                <a href="#">Забыли пароль?</a>
-                                                <a href="#">Новая регистрация</a>
-                                            </div>
+                                        <input class="login-input" type="password" name="password" id="pass" placeholder="Пароль" required>
+                                        <button class="btn btn-login" type="submit">Войти</button>
+                                        <div class="bottom-link-wrap">
+                                            <a class="login-link" href="#"><span class="login-link-content">Забыли пароль?</span></a>
+                                            <a class="login-link" href="#"><span class="login-link-content">Новая регистрация</span></a>
                                         </div>
                                     </form>
                                 </div>
                             </li>
-                            <li class="btn-item empty-basket"><a class="basket-link nav-btn" href="#">Пусто
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
-                                        <g fill="#FFF">
-                                            <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z" />
-                                            <circle cx="6.984" cy="18" r="2" />
-                                            <circle cx="15.984" cy="18" r="2" />
-                                        </g>
-                                    </svg>
+                            <li class="btn-item basket-item"><a class="basket-link empty-basket nav-btn" href="#">Пусто
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g fill="#FFF">
+                                    <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
+                                    <circle cx="6.984" cy="18" r="2"/>
+                                    <circle cx="15.984" cy="18" r="2"/></g></svg>
                                 </a>
                             </li>
                         </ul>
@@ -109,21 +104,18 @@
                             </div>
                             <ul class="slider-list">
                                 <li class="slider-item slide" id="slide1">
-                                    <!-- <img src="img/ice-cream-promo-1.png" alt="Мороженное крем-брюле и пломбир с малиновым джемом фото"> -->
                                     <h3 class="slide-title">
                                         Крем-брюле и пломбир с малиновым джемом
                                     </h3>
                                     <a class="btn btn-slider" href="#">Давайте оба!</a>
                                 </li>
                                 <li class="slider-item slide" id="slide2">
-                                    <!-- <img src="img/ice-cream-promo-2.png" alt="Мороженное шоколадный пломбир и лимонный сорбет фото"> -->
                                     <h3 class="slide-title">
                                         Шоколадный пломбир и лимонный сорбет
                                     </h3>
                                     <a class="btn btn-slider" href="#">Давайте оба!</a>
                                 </li>
                                 <li class="slider-item slide" id="slide3">
-                                    <!-- <img src="img/ice-cream-promo-3.png" alt="Мороженное пломбир с помадкой и клубничный щербет фото"> -->
                                     <h3 class="slide-title">
                                         Пломбир с помадкой и клубничный щербет
                                     </h3>
@@ -220,14 +212,17 @@
                                     =)
                                 </p>
                                 <label for="sub-email" class="visually-hidden">Электронная почта</label>
-                                <input class="sub-field" type="email" name="sub-email" id="sub-email" placeholder="Электронная почта">
+                                <input class="subscribe-input" type="email" name="sub-email" id="sub-email" placeholder="Электронная почта">
                                 <button class="btn btn-subscribe" type="submit">Отправить</button>
                             </div>
                         </section>
                     </div>
                     <section class="contacts">
                         <h2 class="visually-hidden">Как нас найти?</h2>
-                        <div class="map-block"><img class="map" src="img/map(temp).jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург"
+
+                        <div class="map-block">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7e6cddded24faa947d4e8594cb6f7007dad240636f490b9b7ef140cf07811036&amp;source=constructor" width="100%" height="430" frameborder="0"></iframe>
+                            <img class="map" src="img/map.jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург"
                                 width="1200" height="430">
                             <img class="map-pin" src="img/svg/pin.svg" width="80" height="140" alt="Указатель в виде мороженого">
                             <div class="contacts-info">
@@ -240,7 +235,7 @@
                                     <a class="contacts-tel" href="tel:+78124502525">8 812 450-25-25</a>
                                     <span class="contacts-discription">(с 10 до 20 ежедневно)</span>
                                 </p>
-                                <a href="#" class="btn btn-feed-back">Форма обратной связи</a>
+                                <a href="feed-back-form.html" class="btn btn-feed-back">Форма обратной связи</a>
                             </div>
                         </div>
                     </section>
@@ -251,11 +246,11 @@
                             <h3 class="feed-back-title">Мы обязательно вам ответим!</h3>
                             <form name="feed-back-form" id="back" action="https://echo.htmlacademy.ru" method="post">
                                 <label for="name" class="visually-hidden">Имя</label>
-                                <input type="text" name="name" id="name" placeholder="Как вас зовут?">
+                                <input class="feed-back-input" type="text" name="name" id="name" placeholder="Как вас зовут?">
                                 <label for="email-feed-back-id" class="visually-hidden">Ваша почта для ответа?</label>
-                                <input type="email" name="email-feed-back" id="email-feed-back-id" placeholder="Ваша почта для ответа?">
+                                <input class="feed-back-input" type="email" name="email-feed-back" id="email-feed-back-id" placeholder="Ваша почта для ответа?">
                                 <label for="text-feed" class="visually-hidden">Поле для сообщения</label>
-                                <textarea name="text-feed-back" id="text-feed" placeholder="Напишите что-нибудь"></textarea>
+                                <textarea class="feed-back-input" name="text-feed-back" id="text-feed" placeholder="Напишите что-нибудь"></textarea>
                                 <button class="btn btn-feed-submit" type="submit">Отправить</button>
                             </form>
                         </div>
@@ -266,16 +261,16 @@
                 <div class="footer-social">
                     <ul class="social-list" aria-label="Наши группы в социальных сетях">
                         <li class="social-btn-item"><a class="social-btn btn-tw" href="#" aria-label="Группа магазина Глейси в Твиттер"></a></li>
-                        <li class="social-btn-item"><a class="social-btn btn-vk" href="#" aria-label="Группа магазина Глейси в Вконтакте"></a></li>
-                        <li class="social-btn-item"><a class="social-btn btn-fb" href="#" aria-label="Группа магазина Глейси в Фейсбук"></a></li>
                         <li class="social-btn-item"><a class="social-btn btn-inst" href="#" aria-label="Группа магазина Глейси в Инстаграм"></a></li>
+                        <li class="social-btn-item"><a class="social-btn btn-fb" href="#" aria-label="Группа магазина Глейси в Фейсбук"></a></li>
+                        <li class="social-btn-item"><a class="social-btn btn-vk" href="#" aria-label="Группа магазина Глейси в Вконтакте"></a></li>
                     </ul>
                 </div>
                 <div class="about-us" aria-label="Иная информация о нас">
                     <ul class="about-us-list">
                         <li class="us-item partners"><a href="#">Для поставщиков</a></li>
-                        <li class="us-item"><a href="#">О производстве</a></li>
                         <li class="us-item"><a href=" #">Наши документы</a></li>
+                        <li class="us-item"><a href="#">О производстве</a></li>
                         <li class="us-item"><a href=" #">Экологические стандарты</a></li>
                     </ul>
                 </div>
@@ -289,34 +284,7 @@
             </footer>
         </div>
     </div>
-    <script>
-        var link = document.querySelector(".btn-feed-back");
-        var popup = document.querySelector(".feed-back-popup");
-        var overlay = document.querySelector(".feed-back-overlay");
-        var close = popup.querySelector(".popup-close");
-        var form = popup.querySelector("form");
-        var namecustomer = popup.querySelector("[name=name]");
-        var email = popup.querySelector("[name= email-feed-back]");
-
-        link.addEventListener("click", function (evt) {
-            evt.preventDefault();
-            popup.classList.add("feed-back-show");
-            overlay.classList.add("feed-back-show");
-            name.focus();
-        });
-
-  close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("feed-back-show");
-    overlay.classList.remove("feed-back-show");
-  });
-
-  form.addEventListener("submit", function (evt) {
-    evt.preventDefault();
-  });
-
-    </script>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>
