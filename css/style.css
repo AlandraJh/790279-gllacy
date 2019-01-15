@@ -116,45 +116,39 @@ a {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     min-width: 600px;
+    list-style: none;
+    padding:0px;
+    margin-top:23px;
 }
 
-[class$="-list"],
-.site-navigation {
+[class$="-list"] {
     list-style: none;
     padding: 0px;
     margin: 0px;
 }
 
 .site-navigation .nav-main-item {
-    padding: 12px 0;
+    padding-bottom: 13px;
     position: relative;
 }
 
 .nav-main-item .nav-main-link {
+    padding: 7px 14px;
     display: block;
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
-    padding: 7px 14px;
-
+    text-decoration:none;
 }
 
-.site-navigation .main-link-title {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+.nav-main-link::after {
+    display: block;
+    height: 1px;
+    content: "";
+    background-color: rgba(255,255,255,.3);
 }
 
-.site-navigation .active-item,
-.active-item .nav-main-link {
-    background-color: #d07058;
-    color: #ffffff;
-    border-radius: 25px;
-}
-
-.active-item .main-link-title {
-    border-bottom: none;
-}
-
-.nav-main-item:focus-within .nav-main-link {
+.nav-main-link:focus-within  {
     background-color: #f7f6f3;
     color: #323232;
     border-radius: 25px;
@@ -167,12 +161,36 @@ a {
     border-radius: 25px;
 }
 
-/* Баг в IE нет эффекта нажатия,,,,,,,,,,,,,,,,,,,,,,dasdasd,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,sdadsadasdasd,,,,,,,,,,,,,,lllllllllllllllllll,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,*/
-.nav-main-link:active .nav-main-item {
+
+.nav-main-item:focus-within .nav-main-link {
+    background-color: #f7f6f3;
+    color: #323232;
+    border-radius: 25px;
+}
+
+.nav-main-link:hover,
+.nav-main-link:focus {
+    background-color: #f7f6f3;
+    color: #323232;
+    border-radius: 25px;
+}
+
+.nav-main-link:active,
+.nav-btn:active {
     -webkit-box-shadow: inset 0px 2px 1px 0 #696969;
     box-shadow: inset 0px 2px 1px 0 #696969;
     color: #323232;
-    border: none;
+}
+
+.active-item::after {
+    display: none;
+}
+
+.site-navigation .active-item,
+.active-item .nav-main-link {
+    background-color: #d07058;
+    color: #ffffff;
+    border-radius: 25px;
 }
 
 .nav-btn-list {
@@ -198,7 +216,7 @@ a {
     padding: 0px 0;
     min-width: 143px;
     z-index: 2;
-    top: 50px;
+    top: 40px;
     left: -7px;
     margin: 0px;
     list-style: none;
@@ -296,7 +314,6 @@ a {
 .popup-item-active a {
     color: #ffffff;
     background-color: #d07058;
-
 }
 
 .popup-item-active a:hover,
@@ -308,7 +325,6 @@ a {
 .last-popup-item a {
     padding: 6px 20px;
     padding-bottom: 12px;
-
 }
 
 /* =============Кнопки навигации===================== */
@@ -347,14 +363,32 @@ a {
     margin-top: 3px;
 }
 
-.search-btn:hover path,
-.search-btn:focus path {
+.base-btn:hover path,
+.base-btn:focus path,
+.base-btn:active path,
+.base-btn:hover circle,
+.base-btn:focus circle,
+.base-btn:active circle {
     fill: #323232;
-}
+ }
+
+.btn-item:focus-within path,
+.btn-item:focus-within circle  {
+    fill: #323232;
+ }
+
+.btn-item:hover .nav-btn,
+.btn-item:focus .nav-btn {
+    color: #323232;
+    background-color: #f7f6f3;
+ }
+
+ .btn-item:focus-within .nav-btn {
+     color: #323232;
+     background-color: #f7f6f3;
+ }
 
 
-.search-item:hover .search-btn,
-.search-item:focus .search-btn,
 .search-item:focus-within .search-btn {
     background-color: #f7f6f3;
     color: #323232;
@@ -447,8 +481,6 @@ a {
     display: block;
 }
 
-/* jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj */
-
 .nav-btn-list .nav-login-link {
     position: relative;
     display: block;
@@ -485,37 +517,11 @@ a {
 
 
 .nav-login-link svg,
-.basket-link svg {
+.basket-link  svg {
     position: absolute;
     left: 16px;
     top: 6px;
-
 }
-
-.login-item:focus-within .nav-login-link path {
-    fill: #323232;
-}
-
-.login-item:hover .nav-login-link path,
-.login-item:focus .nav-login-link path {
-    fill: #323232;
-}
-
-
-/* .login-item:hover ,
-.nav-login-link:focus g,
-.nav-login-link:focus-within g  {
-    fill: #323232;
-} */
-
-
-
-
-
-/* gdfrgfgdgdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff */
-/* .login-item:active path {
-    fill: #323232;
-} */
 
 .login-btn-popup-wrap {
     position: absolute;
@@ -538,10 +544,13 @@ a {
 }
 
 .login-item:hover .login-btn-popup-wrap,
-.login-item:focus-within .login-btn-popup-wrap {
+.login-item:focus .login-btn-popup-wrap {
     display: block;
 }
 
+.login-item:focus-within .login-btn-popup-wrap {
+    display: block;
+}
 
 .login-input {
     width: 239px;
@@ -591,25 +600,11 @@ a {
     border-bottom: 1px solid #e84d37;
 }
 
-.empty-basket path,
-.empty-basket circle {
-    fill: #ffffff;
-}
-
-.empty-basket:hover path,
-.empty-basket:focus path,
-.empty-basket:focus-within path,
-.empty-basket:hover circle,
-.empty-basket:focus circle,
-.empty-basket:focus-within circle {
-    fill: #323232;
-}
-
-
-.nav-btn-list .basket-not-empty {
+.btn-item .basket-not-empty {
     background-color: #f8f7f4;
     color: #323232;
 }
+
 
 .basket-btn-popup {
     position: absolute;
@@ -634,8 +629,12 @@ a {
     padding: 17px 11px 10px 17px;
 }
 
-.basket-link:hover .basket-btn-popup,
-.basket-link:focus-within .basket-btn-popup {
+.btn-backet:hover .basket-btn-popup {
+    display: block;
+}
+
+
+.btn-backet:focus-within .basket-btn-popup {
     display: block;
 }
 
@@ -650,7 +649,6 @@ a {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 16px 11px 0px 17px;
-
 }
 
 .basket-table .basket-delete-1,
@@ -666,6 +664,7 @@ a {
     border: none;
     background-color: transparent;
     background-image: url(../img/svg/cross-small.svg);
+    background-repeat: no-repeat;
     margin: -12px 0px 0px 0px;
 }
 
@@ -677,6 +676,7 @@ a {
     border: none;
     background-color: transparent;
     background-image: url(../img/svg/cross-small.svg);
+    background-repeat: no-repeat;
     margin: -17px 0px 0px 0px;
 }
 
@@ -704,7 +704,6 @@ a {
 .basket-table .item-backet-2 {
     width: 254px;
     padding: 10px 0px 16px 0px;
-
 
 }
 
@@ -741,8 +740,6 @@ a {
     text-align: right;
     padding: 7px 2px 11px 0px;
 }
-
-/* =================================== */
 
 .header-phone {
     width: 1174px;
@@ -1344,7 +1341,6 @@ a {
     font-weight: 700;
     color: #323232;
     text-decoration: underline;
-
 }
 
 .subscribe-border {
@@ -1972,26 +1968,6 @@ a {
     line-height: 18px;
 }
 
-
-.fat-option label::before {
-    content: "";
-    background-image: url(../img/svg/radio-off.svg);
-    background-repeat: no-repeat;
-    background-size: 22px 22px;
-    width: 22px;
-    height: 22px;
-    position: absolute;
-    top: 4px;
-    left: 2px;
-    opacity: 0.8;
-}
-
-.fat-option .input-radio:checked+label::before {
-    background-image: url(../img/svg/radio-on.svg);
-    opacity: 1;
-}
-
-
 .filler-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2022,6 +1998,25 @@ a {
     padding-left: 35px;
 }
 
+.fat-option label::before {
+    content: "";
+    background-image: url(../img/svg/radio-off.svg);
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 4px;
+    left: 2px;
+    opacity: 0.8;
+}
+
+.fat-option .input-radio:checked+label::before {
+    background-image: url(../img/svg/radio-on.svg);
+    opacity: 0.8;
+}
+
+
 .fill-fieldset label::before {
     content: "";
     position: absolute;
@@ -2049,8 +2044,16 @@ a {
     opacity: 1;
 }
 
-.fill-fieldset .input-checkbox:disabled+label::before,
-.fill-fieldset .input-checkbox:checked:disabled+label::before {
+.fat-fieldset .input-radio:hover+label::before,
+.fat-fieldset .input-radio:checked:hover+label::before {
+    opacity: 1;
+}
+
+.fill-fieldset .input-checkbox:disabled+label::before  {
+    opacity: 0.4;
+}
+
+.fat-fieldset .input-radio:disabled+label::before {
     opacity: 0.4;
 }
 
@@ -2073,6 +2076,7 @@ a {
 .btn-filter:focus {
     background-color: #ffffff;
     color: #323232;
+    outline:none;
 }
 
 .btn-filter:active {
@@ -2089,10 +2093,20 @@ a {
 }
 
 .pagination-block {
+    position:relative;
     margin-top: 51px;
     font-weight:500;
     margin-right: 21px;
+    margin-bottom: 30px;
+}
 
+.pagination-block::after {
+    position:absolute;
+    top:10px;
+    width: 1146px;
+    height: 1px;
+    opacity: 0.3;
+    background-color: #ffffff;
 }
 
 .pagination-list {
@@ -2159,15 +2173,6 @@ a {
 .next a:active {
     background-color:transparent;
 }
-
-
-
-
-
-
-
-
-
 
 .main-footer {
     display: -webkit-box;

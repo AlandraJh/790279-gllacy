@@ -23,7 +23,7 @@
                         </a>
                         <ul class="site-navigation">
                             <li class="nav-main-item">
-                                <a class="nav-main-link" href="catalog.html"><span class="main-link-title">Каталог</span></a>
+                                <a class="nav-main-link" href="catalog.html">Каталог</a>
                                 <ul class="navigation-popup" aria-label="Категории каталога подменю">
                                     <li class="popup-item first-item"><a class="new-item" href="#">Новинки</a></li>
                                     <li class="popup-item"><a href="catalog.html">Сливочное</a></li>
@@ -32,13 +32,13 @@
                                     <li class="popup-item last-popup-item"><a href="#">Мелорин</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-main-item"><a class="nav-main-link" href="#"><span class="main-link-title">Доставка и оплата</span></a></li>
-                            <li class="nav-main-item"><a class="nav-main-link" href="#"><span class="main-link-title">О Компании</span></a></li>
+                            <li class="nav-main-item"><a class="nav-main-link" href="#">Доставка и оплата</a></li>
+                            <li class="nav-main-item"><a class="nav-main-link" href="#">О Компании</a></li>
                         </ul>
                         <ul class="nav-btn-list">
-                            <li class="btn-item search-item">
+                            <li class="btn-item  base-btn search-item">
                                 <button class="search-btn nav-btn"><span class="visually-hidden">Поиск</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    <svg class="symbol-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         width="17" height="17" viewBox="0 0 17 17">
                                         <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" /></svg>
                                 </button>
@@ -51,9 +51,9 @@
                                     </form>
                                 </div>
                             </li>
-                            <li class="btn-item login-item">
+                            <li class="btn-item base-btn login-item">
                                 <a class="nav-login-link nav-btn" href="#">Вход
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    <svg class="symbol-svg login-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         width="21" height="19" viewBox="0 0 21 19">
                                         <g fill="#ffffff">
                                             <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
@@ -76,8 +76,8 @@
                                     </form>
                                 </div>
                             </li>
-                            <li class="btn-item basket-item"><a class="basket-link empty-basket nav-btn" href="#">Пусто
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g fill="#FFF">
+                            <li class="btn-item  base-btn basket-item basket-empty"><a class="basket-link empty-basket nav-btn" href="#">Пусто
+                                    <svg class="symbol-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g fill="#FFF">
                                     <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
                                     <circle cx="6.984" cy="18" r="2"/>
                                     <circle cx="15.984" cy="18" r="2"/></g></svg>
@@ -221,7 +221,7 @@
                         <h2 class="visually-hidden">Как нас найти?</h2>
 
                         <div class="map-block">
-                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7e6cddded24faa947d4e8594cb6f7007dad240636f490b9b7ef140cf07811036&amp;source=constructor" width="100%" height="430" frameborder="0"></iframe>
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7e6cddded24faa947d4e8594cb6f7007dad240636f490b9b7ef140cf07811036&amp;source=constructor" width="1200" height="430"></iframe>
                             <img class="map" src="img/map.jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург"
                                 width="1200" height="430">
                             <img class="map-pin" src="img/svg/pin.svg" width="80" height="140" alt="Указатель в виде мороженого">
@@ -242,7 +242,7 @@
                     <section class="feed-back  feed-back-overlay">
                         <h3 class="visually-hidden">Форма обратной связи</h3>
                         <div class="feed-back-popup">
-                            <button class="popup-close"><span class="visually-hidden">Закрыть</button>
+                            <button class="popup-close"><span class="visually-hidden">Закрыть</span></button>
                             <h3 class="feed-back-title">Мы обязательно вам ответим!</h3>
                             <form name="feed-back-form" id="back" action="https://echo.htmlacademy.ru" method="post">
                                 <label for="name" class="visually-hidden">Имя</label>
