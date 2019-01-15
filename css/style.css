@@ -568,7 +568,7 @@ a {
     display: inline-block;
     vertical-align: top;
     padding: 9px 25px;
-    margin-top: 3px;
+    margin-top: 1px;
     margin-left: 2px;
 }
 
@@ -583,7 +583,7 @@ a {
     display: block;
     color: #323232;
     font-size: 13px;
-    line-height: 24px;
+    line-height: 22px;
 }
 
 .login-link:hover,
@@ -612,7 +612,7 @@ a {
     position: absolute;
     width: 515px;
     min-height: 228px;
-    top: 35px;
+    top: 34px;
     right: 0;
     z-index: 3;
     display: none;
@@ -628,7 +628,7 @@ a {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    padding: 17px 11px 10px 17px;
+    padding: 17px 11px 0px 17px;
 }
 
 .btn-backet:hover .basket-btn-popup {
@@ -1087,7 +1087,7 @@ a {
     min-height: 320px;
     width: 267px;
     margin-bottom: 15px;
-    margin-right: 3px;
+    margin-right: 7px;
 }
 
 .catalog-item-image img,
@@ -1141,7 +1141,8 @@ a {
     line-height: 45px;
     text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
     font-weight: 700;
-    top: 171px;
+    top: 168px;
+    left: 1px;
 }
 
 .catalog-item-price span {
@@ -1807,15 +1808,15 @@ a {
 }
 
 .legend-sort {
-    padding: 2px 13px 9px 18px;
+    padding: 2px 13px 7px 18px;
 }
 
 .legend-price {
-    padding: 2px 0px 9px 12px;
+    padding: 2px 0px 7px 12px;
 }
 
 .legend-fat {
-    padding: 2px 0px 9px 37px;
+    padding: 2px 0px 7px 37px;
 }
 
 .legend-fill {
@@ -2104,10 +2105,15 @@ a {
 }
 
 .pagination-block::after {
-    position:absolute;
-    top:10px;
-    width: 1146px;
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding: 0 27px;
+    width: 98%;
     height: 1px;
+    background-color: rgba(255,255,255,.3);
+    background-clip: content-box;
 
 }
 
@@ -2125,7 +2131,7 @@ a {
 
 .pagination-item {
     display: block;
-    margin:0 0 0 0;
+    margin: 0 0 0 2px;
 }
 
 .pagination-item a {
@@ -2333,18 +2339,6 @@ a {
     border-bottom: 1px solid rgba(255, 188, 158, 0.3);
     color: rgb(255, 188, 158);
     outline: none;
-
 }
 
-/* ------------------ */
 
-div,
-section,
-a,
-ul,
-li,
-p,
-footer,
-header {
-    /* outline: 1px solid red; */
-}
