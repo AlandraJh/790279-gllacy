@@ -2089,10 +2089,9 @@ a {
 }
 
 .pagination-block {
-    margin-top: 56px;
+    margin-top: 51px;
     font-weight:500;
-    margin-right: 18px;
-    margin-bottom: 33px;
+    margin-right: 21px;
 
 }
 
@@ -2110,7 +2109,7 @@ a {
 
 .pagination-item {
     display: block;
-    margin: 0px 0 0 3px;
+    margin:0 0 0 0;
 }
 
 .pagination-item a {
@@ -2160,6 +2159,15 @@ a {
 .next a:active {
     background-color:transparent;
 }
+
+
+
+
+
+
+
+
+
 
 .main-footer {
     display: -webkit-box;
