@@ -424,22 +424,35 @@ a {
 }
 
 .search-input {
-    width: 309px;
-    min-height: 42px;
-    padding-left: 13px;
-}
-
-/*===== Стили всех полей ввода ====== */
-
-[class$="-input"] {
+    width: 310px;
+    min-height: 44px;
+    background-color: #ffffff;
+    box-sizing: border-box;
     border: 1px solid #d3d3d2;
-    color: #323232;
     border-radius: 5px;
+    padding: 10px 0px 9px 13px;
     font: inherit;
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
 }
+
+.search-input:hover {
+    padding: 9px 0px 8px 12px;
+    border: 2px solid rgba(154, 154, 154, 0.52);
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-input:focus {
+    padding: 9px 0px 8px 12px;
+    border: 2px solid rgba(46, 136, 228, 0.52);
+    border-radius: 5px;
+    outline: none;
+}
+
+
+/*===== Стили плейсходдеров ====== */
 
 [class$="-input"]::-webkit-input-placeholder {
     font-weight: 400;
@@ -459,18 +472,6 @@ a {
 [class$="-input"]::placeholder {
     font-weight: 400;
     color: #999999;
-}
-
-[class$="-input"]:hover {
-    border: 2px solid rgba(154, 154, 154, 0.52);
-    border-radius: 5px;
-    outline: none;
-}
-
-[class$="-input"]:focus {
-    border: 2px solid rgba(46, 136, 228, 0.52);
-    padding-left: -1px;
-    border-radius: 5px;
 }
 
 
@@ -555,20 +556,43 @@ a {
 }
 
 .login-input {
-    width: 239px;
-    min-height: 42px;
+    width: 242px;
+    min-height: 44px;
+    background-color: #ffffff;
     box-sizing: border-box;
-    padding-left: 13px;
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+    padding: 10px 0px 9px 13px;
     margin-bottom: 19px;
-    margin-top: 3px;
-
+    font: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
 }
+
+.login-input:hover {
+    width: 242px;
+    box-sizing: border-box;
+    border: 2px solid rgba(154, 154, 154, 0.52);
+    padding: 9px 0px 8px 12px;
+    margin-bottom: 19px;
+}
+
+.login-input:focus {
+    width: 242px;
+    box-sizing: border-box;
+    border: 2px solid rgba(154, 154, 154, 0.52);
+    padding: 9px 0px 8px 12px;
+    border: 2px solid rgba(46, 136, 228, 0.52);
+    margin-bottom: 19px;
+}
+
 
 .btn-login {
     display: inline-block;
     vertical-align: top;
     padding: 9px 25px;
-    margin-top: 1px;
+    margin-top: 3px;
     margin-left: 2px;
 }
 
@@ -878,11 +902,9 @@ a {
 
 /* Смена фона */
 
-#product-1:hover~.site-wrapper label[for="product-1"],
-#product-2:hover~.site-wrapper label[for="product-2"],
-#product-3:hover~.site-wrapper label[for="product-3"] {
+.slider-controls label:hover,
+.slider-controls label:focus {
     background-color: rgba(248, 247, 244, 0.4);
-
 }
 
 #product-1:checked~.site-wrapper #slide1,
@@ -1400,8 +1422,20 @@ a {
 .subscribe-input {
     width: 368px;
     min-height: 44px;
+    background-color: #ffffff;
     box-sizing: border-box;
-    padding: 0px 0px 0px 13px;
+    border: 1px solid #d3d3d2;
+    padding: 10px 13px;
+}
+
+.subscribe-input:hover {
+    border: 2px solid rgba(154, 154, 154, 0.52);
+    padding: 9px 12px;
+}
+
+.subscribe-input:focus {
+    border: 2px solid rgba(46, 136, 228, 0.52);
+    padding: 9px 12px;
 }
 
 .map-block {
@@ -1671,12 +1705,24 @@ a {
 
 .feed-back-input {
     width: 265px;
-    height: 42px;
+    min-height: 44px;
+    background-color: #ffffff;
     box-sizing: border-box;
     margin-top: 0;
     margin-bottom: 20px;
     padding: 14px 7px 13px 15px;
 }
+
+.feed-back-input:hover {
+    padding: 13px 6px 12px 14px;
+    border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.feed-back-input:focus {
+    padding: 13px 6px 12px 14px;
+    border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
 
 .feed-back-popup textarea {
     width: 426px;
