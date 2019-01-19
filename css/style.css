@@ -2110,21 +2110,25 @@ a {
 
 .fat-option label::before {
     content: "";
-    background-image: url(../img/svg/radio-off.svg);
-    background-repeat: no-repeat;
-    background-position:50%;
-    background-size: 20px 20px;
-    width: 20px;
-    height: 20px;
     position: absolute;
-    padding: 2px;
-    top: 2px;
     left: 13px;
+    top: 3px;
+    width: 17px;
+    height: 17px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
     opacity: 0.8;
 }
 
-.fat-option .input-radio:checked+label::before {
-    background-image: url(../img/svg/radio-on.svg);
+.fat-option .input-radio:checked+label::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 9px;
+    height: 9px;
+    background-color: #ffffff;
+    border-radius: 50%;
     opacity: 0.8;
 }
 
@@ -2159,7 +2163,8 @@ a {
 
 /* Эффекты при наведении и блокировке (как пример 2 крайние кнопки) */
 
-.fill-fieldset .input-checkbox:hover+label::before {
+.fill-fieldset .input-checkbox:hover+label::before,
+.fill-fieldset .input-checkbox:focus+label::before {
     opacity: 1;
 }
 
@@ -2179,7 +2184,10 @@ a {
 
 
 .fat-fieldset .input-radio:hover+label::before,
-.fat-fieldset .input-radio:checked:hover+label::before {
+.fat-option .input-radio:checked:hover+label::after,
+.fat-fieldset .input-radio:checked:hover+label::before,
+.fat-option .input-radio:checked:focus+label::after,
+.fat-fieldset .input-radio:checked:focus+label::before {
     opacity: 1;
 }
 
