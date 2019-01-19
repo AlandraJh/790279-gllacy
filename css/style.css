@@ -865,14 +865,14 @@ a {
     padding-top: 276px;
     text-align: center;
     color: #ffffff;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 }
 
 .slide-title {
     width: 700px;
     margin-top: -3px;
     margin: -3px auto;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
     font-size: 60px;
     line-height: 60.35px;
     font-weight: 700;
@@ -880,7 +880,7 @@ a {
 
 .slider-controls {
     position: absolute;
-    bottom: 32px;
+    bottom: 22px;
     left: 26px;
     z-index: 20;
     font-size: 0;
@@ -992,7 +992,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 35px 27px;
+    margin: 0px 27px;
 }
 
 .raspberry-offer,
@@ -1096,23 +1096,15 @@ a {
     flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-bottom: 23px;
-}
-
-.best-sellers {
-    margin-top: 35px;
-    margin-bottom: 20px;
-    margin-right: 28px;
-    margin-left: 23px;
-
+    justify-content: flex-start;
+    margin-bottom: 25px;
 }
 
 .catalog-list {
     margin-top: 25px;
     margin-bottom: 20px;
-    margin-right: 20px;
-    margin-left: 22px;
+    margin-right: 10px;
+    margin-left: 10px;
 
 }
 
@@ -1120,8 +1112,10 @@ a {
     position: relative;
     min-height: 320px;
     width: 267px;
-    margin-bottom: 15px;
-    margin-right: 7px;
+    margin-bottom: 16px;
+    margin-right: 11px;
+    margin-left: 15px;
+
 }
 
 .catalog-item-image img,
@@ -1193,8 +1187,35 @@ a {
     font-size: 16px;
     line-height: 22px;
     text-align: center;
-    margin-top: 8px;
+    margin-top: 6px;
 
+}
+
+.best-sellers {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+
+}
+
+
+.best-item {
+    position: relative;
+    min-height: 320px;
+    width: 263px;
+    padding: 0px 0px 0px 6px;
+}
+
+.best-item-price {
+    position: absolute;
+    z-index: 1;
+    font-size: 45px;
+    line-height: 45px;
+    text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+    font-weight: 700;
+    top: 168px;
+    left: 9px;
 }
 
 .catalog-item-title a {
@@ -1207,7 +1228,6 @@ a {
     border-bottom: 1px solid rgba(255, 188, 158, 0.3);
     color: rgb(255, 188, 158);
     outline: none;
-
 }
 
 .news-blog .blog-title:hover,
@@ -1253,11 +1273,11 @@ a {
     box-sizing: border-box;
     color: #323232;
     width: 1146px;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
     margin-top: -17px;
     margin-left: 27px;
     margin-right: 10px;
-    padding: 25px 21px 21px 20px;
+    padding: 23px 21px 21px 20px;
 }
 
 .features-list {
@@ -2205,19 +2225,19 @@ a {
 
 .pagination-block {
     position: relative;
-    margin-top: 51px;
+    margin-top: 53px;
     font-weight: 500;
     margin-right: 21px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 .pagination-block::after {
     content: "";
     position: absolute;
-    top: 50px;
+    top: 53px;
     left: 0;
     padding: 0 27px;
-    width: 98%;
+    width: 1146px;
     height: 1px;
     background-color: rgba(255, 255, 255, .3);
     background-clip: content-box;
@@ -2299,7 +2319,7 @@ a {
 }
 
 .footer-social {
-    width: 314px;
+    width: 315px;
 }
 
 .social-list {
@@ -2425,7 +2445,7 @@ a {
 
 .footer-copyright {
     margin-top: 17px;
-    margin-right: 24px;
+    margin-right: 10px;
 }
 
 .footer-copyright p {
