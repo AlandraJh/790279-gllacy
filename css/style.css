@@ -1453,7 +1453,12 @@ a {
     background-color: #ffffff;
     box-sizing: border-box;
     border: 1px solid #d3d3d2;
+    border-radius:5px;
     padding: 10px 13px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
 }
 
 .subscribe-input:hover {
@@ -1741,7 +1746,7 @@ a {
     background-color: #ffffff;
     box-sizing: border-box;
     margin-bottom: 20px;
-    padding: 14px 7px 13px 15px;
+    padding: 4px 7px 2px 15px;
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
     -ms-border-radius:5px;
@@ -1749,12 +1754,12 @@ a {
 }
 
 .feed-back-input:hover {
-    padding: 13px 6px 12px 14px;
+    padding: 3px 6px 0px 14px;
     border: 2px solid rgba(154, 154, 154, 0.52);
 }
 
 .feed-back-input:focus {
-    padding: 13px 6px 12px 14px;
+    padding: 3px 6px 0px 14px;
     border: 2px solid rgba(46, 136, 228, 0.52);
 }
 
@@ -1767,7 +1772,7 @@ a {
     box-sizing: border-box;
     margin-bottom: 23px;
     resize: none;
-    padding: 14px 0px 13px 15px;
+    padding: 8px 0 13px 15px;
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
     -ms-border-radius:5px;
@@ -1781,7 +1786,7 @@ a {
     box-sizing: border-box;
     margin-bottom: 23px;
     resize: none;
-    padding: 13px 0px 12px 14px;
+    padding: 7px 0px 12px 14px;
 }
 
 .feed-back-popup textarea:focus {
@@ -1792,7 +1797,7 @@ a {
     box-sizing: border-box;
     margin-bottom: 23px;
     resize: none;
-    padding: 13px 0px 12px 14px;
+    padding: 7px 0px 12px 14px;
 }
 
 .feed-back-popup .popup-close {
