@@ -2161,10 +2161,9 @@ a {
 
 }
 
-/* Эффекты при наведении и блокировке (как пример 2 крайние кнопки) */
+/* Эффекты при наведении, блокировке и фокусе (как пример 2 крайние кнопки) */
 
-.fill-fieldset .input-checkbox:hover+label::before,
-.fill-fieldset .input-checkbox:focus+label::before {
+.fill-fieldset .input-checkbox:hover+label::before {
     opacity: 1;
 }
 
@@ -2178,24 +2177,29 @@ a {
     pointer-events: none;
 }
 
+.fat-fieldset  .input-radio:disabled+label,
 .fill-fieldset .input-checkbox:disabled+label {
     pointer-events: none;
 }
 
 
 .fat-fieldset .input-radio:hover+label::before,
-.fat-option .input-radio:checked:hover+label::after,
-.fat-fieldset .input-radio:checked:hover+label::before,
-.fat-option .input-radio:checked:focus+label::after,
-.fat-fieldset .input-radio:checked:focus+label::before {
+.fat-option .input-radio:checked:hover+label::after {
     opacity: 1;
 }
 
-.fat-fieldset .input-radio:disabled+label::before {
+.fill-fieldset .input-checkbox:focus+label:before,
+.fat-fieldset .input-radio:checked:focus+label::before   {
+    opacity: 1;
+    outline: thin solid;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.fat-fieldset .input-radio:disabled+label::before,
+.fat-fieldset .input-radio:disabled+label::after {
     opacity: 0.4;
     pointer-events: none;
 }
-
 
 .btn-filter {
     width: 144px;
